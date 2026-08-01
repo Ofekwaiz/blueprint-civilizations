@@ -1,0 +1,852 @@
+{
+  "meta": {
+    "title": "Blueprint Civilizations",
+    "version": "0.1",
+    "date": "August 2026"
+  },
+  "match": {
+    "startingGold": 5,
+    "duelMatchHP": 10,
+    "lobbyMatchHP": 20,
+    "normalCombatSeconds": 40,
+    "acceleratedCombatSeconds": 20,
+    "startingCivilizationLevel": 1,
+    "startingBlueprintCapacity": 3
+  },
+  "economy": {
+    "baseIncome": [
+      {
+        "round": 1,
+        "gold": 5
+      },
+      {
+        "round": 5,
+        "gold": 6
+      },
+      {
+        "round": 9,
+        "gold": 7
+      }
+    ],
+    "interestPer10": 1,
+    "interestCap": 3,
+    "goldCap": 50,
+    "rerollCost": 2,
+    "researchPackRaceCost": 8,
+    "artifactPackRaceCost": 18
+  },
+  "civilizationLevels": [
+    {
+      "level": 1,
+      "capacity": 3,
+      "progressCost": 0
+    },
+    {
+      "level": 2,
+      "capacity": 4,
+      "progressCost": 6
+    },
+    {
+      "level": 3,
+      "capacity": 5,
+      "progressCost": 12
+    },
+    {
+      "level": 4,
+      "capacity": 6,
+      "progressCost": 20
+    },
+    {
+      "level": 5,
+      "capacity": 7,
+      "progressCost": 32
+    }
+  ],
+  "shopTierOdds": {
+    "1": [
+      100,
+      0,
+      0,
+      0,
+      0
+    ],
+    "2": [
+      70,
+      30,
+      0,
+      0,
+      0
+    ],
+    "3": [
+      45,
+      40,
+      15,
+      0,
+      0
+    ],
+    "4": [
+      25,
+      35,
+      30,
+      10,
+      0
+    ],
+    "5": [
+      10,
+      25,
+      35,
+      23,
+      7
+    ]
+  },
+  "races": {
+    "Hive": {
+      "color": "548235",
+      "resource": "Biomass",
+      "nexus": "Brood Queen",
+      "mechanics": "Adaptive evolution, biological population, poison, armor, flyers, parasites, creep-like support.",
+      "strengths": "Replacement rate, flexible evolution, attrition, population scaling.",
+      "weaknesses": "Area damage, burst attacks on Queen/Nexus, dependence on biological synergy.",
+      "start": "Larva Brood"
+    },
+    "Cultists": {
+      "color": "7030A0",
+      "resource": "Souls",
+      "nexus": "Profane Sanctuary",
+      "mechanics": "Death economy, necromancy, curses, sacrifices, pacts, demon summoning.",
+      "strengths": "Value from death, disruptive curses, revival, explosive ritual spikes.",
+      "weaknesses": "Setup costs, sacrifice risks, anti-summon/holy pressure, weaker clean economy.",
+      "start": "Acolyte Circle"
+    },
+    "Humans": {
+      "color": "C55A11",
+      "resource": "Faith",
+      "nexus": "Radiant Citadel",
+      "mechanics": "Training, formation, equipment-like research, holy support, engineering, tame neutral beasts.",
+      "strengths": "Reliable combined arms, defense, healing, ranged focus, adaptable neutral integration.",
+      "weaknesses": "Higher unit costs, vulnerable economy structures, less extreme scaling without specialization.",
+      "start": "Militia Muster"
+    }
+  },
+  "units": {
+    "Hive": [
+      {
+        "id": "HIVE_LARVA",
+        "name": "Larva Brood",
+        "tier": 1,
+        "cost": 1,
+        "hp": 70,
+        "damage": 7,
+        "attackSpeed": 1.0,
+        "maxPopulation": 6,
+        "role": "Melee",
+        "ability": "On death: 20% chance to leave Biomass Mote worth 0.25 Biomass.",
+        "ascensionI": "Swarmling: +2 cap, faster spawn; Carapace Grub: armor and body-block.",
+        "ascensionII": "Brood Tide: batch-spawns 2; Iron Larva: reflects minor physical damage."
+      },
+      {
+        "id": "HIVE_SPIDER",
+        "name": "Web Spider",
+        "tier": 1,
+        "cost": 2,
+        "hp": 95,
+        "damage": 12,
+        "attackSpeed": 0.85,
+        "maxPopulation": 4,
+        "role": "Ranged",
+        "ability": "Every third attack applies 15% slow for 2 sec.",
+        "ascensionI": "Venom Spider: poison DoT; Weaver Spider: stronger slow and web zone; Wing Spider: flying mobility.",
+        "ascensionII": "Plague Weaver / Grand Webmother / Sky Stalker."
+      },
+      {
+        "id": "HIVE_BEETLE",
+        "name": "Shell Beetle",
+        "tier": 1,
+        "cost": 2,
+        "hp": 180,
+        "damage": 13,
+        "attackSpeed": 0.65,
+        "maxPopulation": 3,
+        "role": "Melee tank",
+        "ability": "First 4 sec after spawn gains 25 Armor.",
+        "ascensionI": "Bulwark Beetle; Bombardier Beetle; Burrowing Beetle.",
+        "ascensionII": "Adamant Colossus / Acid Mortar Beetle / Tunnel Tyrant."
+      },
+      {
+        "id": "HIVE_MANTIS",
+        "name": "Razor Mantis",
+        "tier": 2,
+        "cost": 3,
+        "hp": 140,
+        "damage": 24,
+        "attackSpeed": 0.8,
+        "maxPopulation": 3,
+        "role": "Melee assassin",
+        "ability": "Leaps to first ranged target in lane once per life.",
+        "ascensionI": "Executioner; Pack Hunter; Psychic Mantis.",
+        "ascensionII": "Reaper Prime / Alpha Claw / Neural Reaver."
+      },
+      {
+        "id": "HIVE_SPITTER",
+        "name": "Acid Spitter",
+        "tier": 2,
+        "cost": 3,
+        "hp": 115,
+        "damage": 18,
+        "attackSpeed": 0.75,
+        "maxPopulation": 4,
+        "role": "Ranged",
+        "ability": "Attacks reduce Armor by 2, stacking to 10.",
+        "ascensionI": "Toxic Spitter; Siege Spitter; Healing Enzyme Spitter.",
+        "ascensionII": "Plague Cannon / Corrosive Artillery / Vitality Apostle."
+      },
+      {
+        "id": "HIVE_DRONE",
+        "name": "Creep Drone",
+        "tier": 2,
+        "cost": 2,
+        "hp": 90,
+        "damage": 6,
+        "attackSpeed": 0.7,
+        "maxPopulation": 3,
+        "role": "Support",
+        "ability": "Creates a lane aura: allied Hive units +8% move speed.",
+        "ascensionI": "Brood Nurse; Creep Architect; Spore Scout.",
+        "ascensionII": "Royal Nurse / Living Highway / Omniscient Spore."
+      },
+      {
+        "id": "HIVE_QUEENLING",
+        "name": "Queenling",
+        "tier": 3,
+        "cost": 4,
+        "hp": 240,
+        "damage": 20,
+        "attackSpeed": 0.55,
+        "maxPopulation": 2,
+        "role": "Support summoner",
+        "ability": "Every 8 sec lays a temporary Larva (resource weight 0).",
+        "ascensionI": "Brood Queenling; Venom Queenling; Neural Queenling.",
+        "ascensionII": "Matriarch / Toxic Empress / Puppet Sovereign."
+      },
+      {
+        "id": "HIVE_FLYER",
+        "name": "Needlewing",
+        "tier": 3,
+        "cost": 4,
+        "hp": 130,
+        "damage": 22,
+        "attackSpeed": 1.0,
+        "maxPopulation": 4,
+        "role": "Flying ranged",
+        "ability": "Ignores ground blockers; -20% damage to structures.",
+        "ascensionI": "Razorwing; Carrier Wing; Toxic Wing.",
+        "ascensionII": "Storm Razor / Brood Carrier / Miasma Wing."
+      },
+      {
+        "id": "HIVE_TITAN",
+        "name": "Titan Beetle",
+        "tier": 4,
+        "cost": 5,
+        "hp": 620,
+        "damage": 48,
+        "attackSpeed": 0.45,
+        "maxPopulation": 1,
+        "role": "Elite tank",
+        "ability": "Ground slam every 6 sec damages and knocks nearby units.",
+        "ascensionI": "Siege Titan; Living Fortress; Devourer Titan.",
+        "ascensionII": "Worldbreaker / Immortal Bastion / Apex Consumer."
+      },
+      {
+        "id": "HIVE_PARASITE",
+        "name": "Neural Parasite",
+        "tier": 4,
+        "cost": 5,
+        "hp": 150,
+        "damage": 10,
+        "attackSpeed": 0.5,
+        "maxPopulation": 2,
+        "role": "Control",
+        "ability": "Channels 4 sec on a non-boss target below 35% HP to convert it temporarily.",
+        "ascensionI": "Mind Leech; Brood Infection; Synapse Lord.",
+        "ascensionII": "Dominion Parasite / Walking Plague / Overmind Shard."
+      },
+      {
+        "id": "HIVE_LEVIATHAN",
+        "name": "Leviathan Egg",
+        "tier": 5,
+        "cost": 7,
+        "hp": 900,
+        "damage": 65,
+        "attackSpeed": 0.35,
+        "maxPopulation": 1,
+        "role": "Apex",
+        "ability": "Hatches after 8 sec; gains one adaptation based on most common enemy tag.",
+        "ascensionI": "Predator; Fortress; Broodship.",
+        "ascensionII": "Apex Predator / Planetary Shell / Endless Broodship."
+      }
+    ],
+    "Cultists": [
+      {
+        "id": "CULT_ACOLYTE",
+        "name": "Acolyte Circle",
+        "tier": 1,
+        "cost": 1,
+        "hp": 80,
+        "damage": 9,
+        "attackSpeed": 0.9,
+        "maxPopulation": 5,
+        "role": "Ranged",
+        "ability": "Deaths of nearby non-summoned allies grant 0.15 bonus Soul.",
+        "ascensionI": "Fanatic; Hex Acolyte; Blood Acolyte.",
+        "ascensionII": "Martyr Host / Grand Hexer / Crimson Vessel."
+      },
+      {
+        "id": "CULT_SKELETON",
+        "name": "Skeleton Cohort",
+        "tier": 1,
+        "cost": 2,
+        "hp": 85,
+        "damage": 11,
+        "attackSpeed": 0.85,
+        "maxPopulation": 6,
+        "role": "Melee",
+        "ability": "20% chance to revive once at 35% HP; no second Soul value.",
+        "ascensionI": "Bone Legion; Shield Skeleton; Burning Bones.",
+        "ascensionII": "Endless Legion / Ossuary Guard / Cinder Dead."
+      },
+      {
+        "id": "CULT_IMP",
+        "name": "Bound Imps",
+        "tier": 1,
+        "cost": 2,
+        "hp": 65,
+        "damage": 13,
+        "attackSpeed": 1.1,
+        "maxPopulation": 5,
+        "role": "Melee demon",
+        "ability": "Explodes for 20 magic damage on death.",
+        "ascensionI": "Frenzied Imp; Ash Imp; Siphon Imp.",
+        "ascensionII": "Pandemonium Pack / Hellfire Brood / Soul Thieves."
+      },
+      {
+        "id": "CULT_NECRO",
+        "name": "Necromancer",
+        "tier": 2,
+        "cost": 3,
+        "hp": 135,
+        "damage": 12,
+        "attackSpeed": 0.65,
+        "maxPopulation": 3,
+        "role": "Ranged summoner",
+        "ability": "Raises one temporary skeleton every 7 sec.",
+        "ascensionI": "Gravecaller; Corpse Stitcher; Lich Disciple.",
+        "ascensionII": "Army of Dust / Flesh Architect / Lesser Lich."
+      },
+      {
+        "id": "CULT_WARLOCK",
+        "name": "Warlock",
+        "tier": 2,
+        "cost": 3,
+        "hp": 110,
+        "damage": 19,
+        "attackSpeed": 0.75,
+        "maxPopulation": 3,
+        "role": "Ranged caster",
+        "ability": "Curses current target: -12% damage for 4 sec.",
+        "ascensionI": "Doomspeaker; Pact Binder; Witchflame.",
+        "ascensionII": "Prophet of Ruin / Chainmaster / Blackfire Magus."
+      },
+      {
+        "id": "CULT_GOLEM",
+        "name": "Flesh Golem",
+        "tier": 2,
+        "cost": 3,
+        "hp": 260,
+        "damage": 20,
+        "attackSpeed": 0.55,
+        "maxPopulation": 2,
+        "role": "Tank",
+        "ability": "Heals 3% max HP when any unit dies nearby, cooldown 1 sec.",
+        "ascensionI": "Stitched Giant; Plague Golem; Sacrificial Golem.",
+        "ascensionII": "Abomination / Rot Colossus / Offering Engine."
+      },
+      {
+        "id": "CULT_SUCCUBUS",
+        "name": "Temptress",
+        "tier": 3,
+        "cost": 4,
+        "hp": 150,
+        "damage": 21,
+        "attackSpeed": 0.8,
+        "maxPopulation": 2,
+        "role": "Control",
+        "ability": "Charms lowest-HP enemy for 2 sec every 9 sec.",
+        "ascensionI": "Siren; Soul Drinker; Shadow Dancer.",
+        "ascensionII": "Choir of Desire / Essence Queen / Night Sovereign."
+      },
+      {
+        "id": "CULT_DEMON",
+        "name": "Horned Demon",
+        "tier": 3,
+        "cost": 4,
+        "hp": 330,
+        "damage": 34,
+        "attackSpeed": 0.65,
+        "maxPopulation": 2,
+        "role": "Elite melee",
+        "ability": "Gains 2% damage per Soul spent this planning phase, capped 30%.",
+        "ascensionI": "Hellguard; Ravager; Pact Lord.",
+        "ascensionII": "Gate Sentinel / Infernal Butcher / Contract Prince."
+      },
+      {
+        "id": "CULT_LICH",
+        "name": "Lich",
+        "tier": 4,
+        "cost": 5,
+        "hp": 240,
+        "damage": 36,
+        "attackSpeed": 0.55,
+        "maxPopulation": 1,
+        "role": "Caster",
+        "ability": "Every 8 sec deals magic damage to 3 targets and marks corpses for revival.",
+        "ascensionI": "Frost Lich; Death Lich; Soul Lich.",
+        "ascensionII": "Winter Tyrant / Grave Emperor / Eternal Scholar."
+      },
+      {
+        "id": "CULT_ALTARBEAST",
+        "name": "Altar Beast",
+        "tier": 4,
+        "cost": 5,
+        "hp": 500,
+        "damage": 42,
+        "attackSpeed": 0.45,
+        "maxPopulation": 1,
+        "role": "Tank demon",
+        "ability": "At spawn sacrifice 10% max HP of adjacent-board blueprints’ units; gains double amount as shield.",
+        "ascensionI": "Blood Idol; Curse Beast; Gate Beast.",
+        "ascensionII": "Red Godling / Walking Malediction / Living Portal."
+      },
+      {
+        "id": "CULT_ARCHDEMON",
+        "name": "Archdemon Contract",
+        "tier": 5,
+        "cost": 7,
+        "hp": 780,
+        "damage": 62,
+        "attackSpeed": 0.4,
+        "maxPopulation": 1,
+        "role": "Apex",
+        "ability": "Starts sealed; unseals after 5 allied deaths, then enters lane.",
+        "ascensionI": "Warlord; Deceiver; Devourer.",
+        "ascensionII": "Prince of War / Prince of Lies / Prince of Hunger."
+      }
+    ],
+    "Humans": [
+      {
+        "id": "HUM_MILITIA",
+        "name": "Militia Muster",
+        "tier": 1,
+        "cost": 1,
+        "hp": 100,
+        "damage": 10,
+        "attackSpeed": 0.9,
+        "maxPopulation": 5,
+        "role": "Melee",
+        "ability": "Gains +5 Armor while another Militia or Pikeman is nearby.",
+        "ascensionI": "Pikemen; Swordsmen; Zealots.",
+        "ascensionII": "Royal Pike Wall / Veteran Legion / Blessed Host."
+      },
+      {
+        "id": "HUM_ARCHER",
+        "name": "Crossbow Company",
+        "tier": 1,
+        "cost": 2,
+        "hp": 90,
+        "damage": 15,
+        "attackSpeed": 0.75,
+        "maxPopulation": 4,
+        "role": "Ranged",
+        "ability": "First shot after spawn deals +40% damage.",
+        "ascensionI": "Longbowmen; Arbalests; Holy Marksmen.",
+        "ascensionII": "Arrow Storm / Pavise Corps / Sunshot Order."
+      },
+      {
+        "id": "HUM_PRIEST",
+        "name": "Chapel Priests",
+        "tier": 1,
+        "cost": 2,
+        "hp": 85,
+        "damage": 6,
+        "attackSpeed": 0.6,
+        "maxPopulation": 3,
+        "role": "Support",
+        "ability": "Heals lowest-HP ally every 3 sec.",
+        "ascensionI": "Battle Cleric; Healer; Exorcist.",
+        "ascensionII": "War Saints / Miracle Choir / Demonbane Order."
+      },
+      {
+        "id": "HUM_KNIGHT",
+        "name": "Knight Order",
+        "tier": 2,
+        "cost": 3,
+        "hp": 250,
+        "damage": 26,
+        "attackSpeed": 0.65,
+        "maxPopulation": 2,
+        "role": "Melee elite",
+        "ability": "Charge on first contact for double damage.",
+        "ascensionI": "Cavalier; Royal Guard; Templar.",
+        "ascensionII": "Thunder Cavalry / Kingshield / Seraphic Templar."
+      },
+      {
+        "id": "HUM_SCOUT",
+        "name": "Rangers",
+        "tier": 2,
+        "cost": 3,
+        "hp": 110,
+        "damage": 18,
+        "attackSpeed": 0.9,
+        "maxPopulation": 3,
+        "role": "Ranged mobile",
+        "ability": "Can switch lane once to answer an undefended push.",
+        "ascensionI": "Beastmaster; Skirmisher; Monster Hunter.",
+        "ascensionII": "Grand Tamer / Wind Rangers / Wyrm Slayers."
+      },
+      {
+        "id": "HUM_MAGE",
+        "name": "Court Mage",
+        "tier": 2,
+        "cost": 3,
+        "hp": 95,
+        "damage": 23,
+        "attackSpeed": 0.55,
+        "maxPopulation": 2,
+        "role": "Caster",
+        "ability": "Every fourth attack splashes magic damage.",
+        "ascensionI": "Pyromancer; Enchanter; Storm Mage.",
+        "ascensionII": "Royal Inferno / Grand Enchanter / Tempest Council."
+      },
+      {
+        "id": "HUM_BALLISTA",
+        "name": "Ballista Crew",
+        "tier": 3,
+        "cost": 4,
+        "hp": 180,
+        "damage": 34,
+        "attackSpeed": 0.45,
+        "maxPopulation": 2,
+        "role": "Siege ranged",
+        "ability": "Prioritizes structures and Nexus; slow reload.",
+        "ascensionI": "Repeater; Heavy Ballista; Blessed Ballista.",
+        "ascensionII": "Hail Engine / Castle Piercer / Radiant Spear."
+      },
+      {
+        "id": "HUM_PALADIN",
+        "name": "Paladin",
+        "tier": 3,
+        "cost": 4,
+        "hp": 300,
+        "damage": 30,
+        "attackSpeed": 0.55,
+        "maxPopulation": 2,
+        "role": "Holy tank",
+        "ability": "Every 8 sec shields nearby allies.",
+        "ascensionI": "Crusader; Guardian; Dawnbringer.",
+        "ascensionII": "Lion Crusader / Immovable Saint / Herald of Dawn."
+      },
+      {
+        "id": "HUM_ANGEL",
+        "name": "Angel",
+        "tier": 4,
+        "cost": 5,
+        "hp": 260,
+        "damage": 38,
+        "attackSpeed": 0.65,
+        "maxPopulation": 1,
+        "role": "Flying holy",
+        "ability": "On first allied death, grants lane-wide 10% attack speed for 5 sec.",
+        "ascensionI": "Avenger; Protector; Herald.",
+        "ascensionII": "Judgment Seraph / Aegis Seraph / Trumpet Seraph."
+      },
+      {
+        "id": "HUM_SIEGE",
+        "name": "Trebuchet Battery",
+        "tier": 4,
+        "cost": 5,
+        "hp": 210,
+        "damage": 55,
+        "attackSpeed": 0.3,
+        "maxPopulation": 1,
+        "role": "Siege structure-like unit",
+        "ability": "Lobs over blockers; minimum range.",
+        "ascensionI": "Fire Trebuchet; Counterweight Engine; Relic Launcher.",
+        "ascensionII": "Meteor Battery / Kingdom Breaker / Ark Artillery."
+      },
+      {
+        "id": "HUM_CHAMPION",
+        "name": "Chosen Champion",
+        "tier": 5,
+        "cost": 7,
+        "hp": 650,
+        "damage": 58,
+        "attackSpeed": 0.55,
+        "maxPopulation": 1,
+        "role": "Apex hero",
+        "ability": "Select one heroic oath based on dominant philosophy at spawn.",
+        "ascensionI": "Warlord; Saint; Artificer.",
+        "ascensionII": "High King / Living Miracle / Master of Engines."
+      }
+    ]
+  },
+  "structures": {
+    "Hive": [
+      {
+        "name": "Creep Tumor",
+        "tier": 1,
+        "cost": 1,
+        "effect": "Adjacent Organic blueprints gain +8% move speed and +5% spawn speed. Battlefield aura slows enemies 5%.",
+        "ascensionI": "Sprawling Creep / Fortified Creep / Toxic Creep"
+      },
+      {
+        "name": "Biomass Pool",
+        "tier": 2,
+        "cost": 2,
+        "effect": "Economy: gain 1 Biomass after combat if at least 8 enemy resource weight died. Adjacent blueprints +1 population at Ascension I.",
+        "ascensionI": "Digestive Pool / Royal Jelly Pool / Recycling Pool"
+      },
+      {
+        "name": "Evolution Chamber",
+        "tier": 2,
+        "cost": 3,
+        "effect": "Adjacent blueprints see one extra evolution option weighting and ability refinements +20% effect.",
+        "ascensionI": "Adaptive Lab / Carapace Forge / Neural Vat"
+      },
+      {
+        "name": "Spore Tower",
+        "tier": 3,
+        "cost": 4,
+        "effect": "Lane defense anti-flying projectile tower; reveals burrowed units.",
+        "ascensionI": "Toxic Spore / Guardian Spore / Brood Spore"
+      },
+      {
+        "name": "Living Wall",
+        "tier": 3,
+        "cost": 3,
+        "effect": "Barrier with high HP; when destroyed releases 2 temporary Larvae.",
+        "ascensionI": "Thorn Wall / Regenerating Wall / Explosive Cyst"
+      }
+    ],
+    "Cultists": [
+      {
+        "name": "Soul Well",
+        "tier": 1,
+        "cost": 1,
+        "effect": "Gain +0.1 Soul per nearby valid death; adjacent summoned blueprints spawn 5% faster.",
+        "ascensionI": "Deep Well / Echo Well / Hungry Well"
+      },
+      {
+        "name": "Profane Altar",
+        "tier": 2,
+        "cost": 2,
+        "effect": "Left blueprint loses 1 max population; right blueprint gains 15% damage and 10% HP.",
+        "ascensionI": "Blood Altar / Bone Altar / Pact Altar"
+      },
+      {
+        "name": "Crypt",
+        "tier": 2,
+        "cost": 3,
+        "effect": "First non-summoned allied death in its lane revives after 6 sec at 40% HP.",
+        "ascensionI": "Royal Crypt / Plague Crypt / Empty Tomb"
+      },
+      {
+        "name": "Curse Totem",
+        "tier": 3,
+        "cost": 4,
+        "effect": "Enemies entering lane lose 8% damage and healing.",
+        "ascensionI": "Frailty Totem / Silence Totem / Despair Totem"
+      },
+      {
+        "name": "Demon Gate",
+        "tier": 3,
+        "cost": 4,
+        "effect": "Every 12 sec creates a temporary Imp if total valid allied deaths >=3.",
+        "ascensionI": "Hell Gate / Shadow Gate / Brass Gate"
+      }
+    ],
+    "Humans": [
+      {
+        "name": "Marketplace",
+        "tier": 1,
+        "cost": 1,
+        "effect": "If active through combat, gain +1 Gold after Resolution. Adjacent blueprint copies cost unchanged; no direct discount in prototype.",
+        "ascensionI": "Guild Market / Royal Exchange / Caravan Hub"
+      },
+      {
+        "name": "Barricade",
+        "tier": 1,
+        "cost": 1,
+        "effect": "Cheap lane barrier; adjacent military blueprint units gain 4 Armor while on owner half.",
+        "ascensionI": "Pike Wall / Pavise Line / Blessed Rampart"
+      },
+      {
+        "name": "Church",
+        "tier": 2,
+        "cost": 3,
+        "effect": "Gain 1 Faith if its lane Nexus takes no damage for first 20 sec; adjacent Holy blueprints heal +10%.",
+        "ascensionI": "Cathedral / Hospital Chapel / Warrior Chapel"
+      },
+      {
+        "name": "Blacksmith",
+        "tier": 2,
+        "cost": 3,
+        "effect": "Adjacent Human military blueprints gain +6% damage and +6 Armor.",
+        "ascensionI": "Weaponsmith / Armorsmith / Artificer Hall"
+      },
+      {
+        "name": "Ballista Tower",
+        "tier": 3,
+        "cost": 4,
+        "effect": "Static anti-elite defense; prioritizes highest max HP.",
+        "ascensionI": "Repeater Tower / Holy Tower / Scorpion Tower"
+      }
+    ]
+  },
+  "research": {
+    "Hive": [
+      "Acid Blood: on death deal 8% max HP magic damage nearby; cap versus bosses.",
+      "Rapid Gestation: -12% spawn interval, -8% base HP.",
+      "Heavy Carapace: +18 Armor, -8% move speed.",
+      "Brood Sacs: +2 maximum population, -10% damage.",
+      "Wing Buds: unit becomes Flying; -12% HP unless already Flying.",
+      "Neural Glands: ability cooldown -15%; resource cost effects +10%.",
+      "Predatory Senses: prioritize lowest-HP enemy; +10% damage below 35% HP.",
+      "Regenerative Tissue: heal 1% max HP/sec after 3 sec without damage.",
+      "Creep Dependency: +18% stats while structure/creep aura active, -8% otherwise.",
+      "Adaptive Genome: at combat start gain +8 Armor or Resistance based on dominant enemy damage type."
+    ],
+    "Cultists": [
+      "Soul Vessel: blueprint deaths generate +20% Souls, but units have -8% HP.",
+      "Corpse Spark: first death each 5 sec damages nearest enemy.",
+      "Forbidden Renewal: 15% chance to revive once at 25% HP.",
+      "Blood Price: +18% damage; each spawn deals 5% max HP to owner Nexus, capped per combat.",
+      "Hex of Frailty: attacks reduce target Armor/Resistance by 2, stack 5.",
+      "Demonic Brand: gains Demon tag and +12% HP; receives extra Holy damage.",
+      "Grave Memory: summoned replacements gain 2% damage per prior death, cap 20%.",
+      "Pact of Haste: -15% spawn interval; lose 1 Soul every third spawn.",
+      "Shadow Step: first time below 40% HP, become untargetable 1 sec.",
+      "Soul Chain: shares 20% incoming damage with nearest same-blueprint ally."
+    ],
+    "Humans": [
+      "Tempered Steel: +10% damage and +8 Armor.",
+      "Field Medicine: receives 18% more healing; heals self 2% after kills.",
+      "Royal Training: +12% HP; at Ascension gain another +6%.",
+      "Repeating Mechanism: +15% attack speed, -8% damage per hit.",
+      "Blessed Weapon: 15% attacks deal bonus magic damage.",
+      "Formation Drills: +10 Armor while near same-blueprint ally.",
+      "Monster Harness: neutral/tamed unit gains Human tag and +12% move speed.",
+      "Heroic Standard: first spawned unit grants nearby allies +8% damage for 6 sec.",
+      "Siege Calibration: +25% structure/Nexus damage, -10% unit damage.",
+      "Sanctified Soul: first lethal hit leaves unit at 1 HP and grants 1 sec immunity once."
+    ]
+  },
+  "artifacts": {
+    "Hive": [
+      "Living Hive Heart: all Hive spawn intervals -6%; Nexus HP -8%.",
+      "Crown of Chitin: Ascended Hive blueprints gain +10 Armor and Resistance.",
+      "Overmind Node: adjacency effects that target one neighbor also affect the other at 50%.",
+      "Endless Molt: first Hive unit death per blueprint each combat respawns instantly; 12-sec per-blueprint cooldown.",
+      "Predator Archive: evolution choices are weighted toward enemy tags defeated last combat.",
+      "Royal Jelly: Queen/Queenling effects +30%; other supports -10% damage."
+    ],
+    "Cultists": [
+      "Forbidden Grimoire: first ritual/research pack each match costs 25% less Souls.",
+      "Crown of Ash: summoned demons gain +15% damage after five allied deaths.",
+      "Black Bell: every tenth valid death sends a curse pulse reducing enemy attack speed 12% for 4 sec.",
+      "Contract of Equals: your highest-cost and lowest-cost active blueprints share 10% of base stats.",
+      "Empty Throne: if no Apex blueprint active, all Tier 1-2 units +12% HP and spawn speed.",
+      "Soul Ledger: unused Souls grant up to +15% Nexus armor at 30 Souls."
+    ],
+    "Humans": [
+      "Crown of Kings: adjacent Human blueprint effects are 20% stronger.",
+      "Banner of the First Dawn: first unit spawned in each lane gains +25% HP.",
+      "Saint’s Reliquary: overhealing becomes shield up to 12% max HP.",
+      "Royal Treasury: interest cap +1, but Marketplace effects do not stack.",
+      "Masterwork Arsenal: first research attached to each Human blueprint gains +25% numeric effect.",
+      "Treaty of Beasts: neutral shared units count as Human for adjacency and gain +10% HP."
+    ]
+  },
+  "neutralUnits": [
+    {
+      "id": "NEU_WOLF",
+      "name": "Dire Wolves",
+      "tier": 1,
+      "cost": 2,
+      "hp": 90,
+      "damage": 14,
+      "attackSpeed": 1.0,
+      "maxPopulation": 4,
+      "ability": "Fast melee; gains damage when multiple wolves focus same target.",
+      "raceIntegration": "Hive: Chitin Pack. Cult: Hellhounds. Human: War Hounds."
+    },
+    {
+      "id": "NEU_BEAR",
+      "name": "Great Bear",
+      "tier": 2,
+      "cost": 3,
+      "hp": 300,
+      "damage": 25,
+      "attackSpeed": 0.6,
+      "maxPopulation": 2,
+      "ability": "Tank; roar reduces nearby enemy damage 8%.",
+      "raceIntegration": "Hive: Beetle-Bear. Cult: Corpse Bear. Human: Armored Bear."
+    },
+    {
+      "id": "NEU_GRIFFIN",
+      "name": "Griffin",
+      "tier": 3,
+      "cost": 4,
+      "hp": 210,
+      "damage": 30,
+      "attackSpeed": 0.75,
+      "maxPopulation": 2,
+      "ability": "Flying bruiser; dives backline once.",
+      "raceIntegration": "Hive: Needle Griffin. Cult: Bone Griffin. Human: Griffin Rider."
+    },
+    {
+      "id": "NEU_TROLL",
+      "name": "Troll",
+      "tier": 3,
+      "cost": 4,
+      "hp": 380,
+      "damage": 28,
+      "attackSpeed": 0.55,
+      "maxPopulation": 2,
+      "ability": "Regenerates strongly out of combat.",
+      "raceIntegration": "Hive: Regeneration donor. Cult: sacrifice/reanimate. Human: chained mercenary."
+    },
+    {
+      "id": "NEU_DRAGON",
+      "name": "Young Dragon",
+      "tier": 4,
+      "cost": 5,
+      "hp": 420,
+      "damage": 40,
+      "attackSpeed": 0.55,
+      "maxPopulation": 1,
+      "ability": "Flying cone breath.",
+      "raceIntegration": "Hive: Insectoid Wyrm. Cult: Hell/Undead Dragon. Human: Dragon Rider."
+    },
+    {
+      "id": "NEU_PHOENIX",
+      "name": "Phoenix",
+      "tier": 5,
+      "cost": 7,
+      "hp": 350,
+      "damage": 48,
+      "attackSpeed": 0.65,
+      "maxPopulation": 1,
+      "ability": "Revives once from egg after 5 sec.",
+      "raceIntegration": "Hive: Ember Moth. Cult: Ash Phoenix. Human: Sacred Phoenix."
+    }
+  ]
+}
