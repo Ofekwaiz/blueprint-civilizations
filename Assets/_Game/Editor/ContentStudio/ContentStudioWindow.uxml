@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement class="content-studio">
+        <uie:Toolbar class="content-toolbar">
+            <uie:ToolbarSearchField name="search" />
+            <uie:ToolbarMenu name="type-menu" text="Units" />
+            <ui:Button name="create-button" text="Create" />
+            <ui:Button name="duplicate-button" text="Duplicate" />
+            <ui:Button name="disable-button" text="Disable" />
+            <ui:Button name="delete-button" text="Delete Permanently" />
+            <ui:VisualElement class="toolbar-spacer" />
+            <ui:Button name="catalog-button" text="Rebuild Catalog" />
+            <ui:Button name="validate-button" text="Validate All" />
+        </uie:Toolbar>
+        <ui:TwoPaneSplitView fixed-pane-index="0" fixed-pane-initial-dimension="310" orientation="Horizontal" class="content-split">
+            <ui:ListView name="content-list" selection-type="Single" virtualization-method="FixedHeight" />
+            <ui:ScrollView name="details" />
+        </ui:TwoPaneSplitView>
+        <ui:Label name="validation" text="Select content to see validation." class="validation-output" />
+    </ui:VisualElement>
+</ui:UXML>

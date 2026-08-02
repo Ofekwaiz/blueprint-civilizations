@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11111111111111111111111111111101, type: 3}
+  m_Name: Ability_Hive_WebSlow
+  m_EditorClassIdentifier:
+  id: ABILITY_HIVE_WEB_SLOW
+  displayName: Web Slow
+  description: "Every third attack applies 15% slow for 2 seconds."
+  dataVersion: 1
+  isEnabled: 1
+  tags: [Hive, Organic, Slow]
+  icon: {fileID: 0}
+  modifiers: []
+  triggers:
+  - eventType: 2
+    requiredTags: []
+    probability: 1
+    everyNthEvent: 3
+    cooldownSeconds: 0
+    maximumTriggers: 0
+    modifiers:
+    - targetSelector: eventTarget
+      stat: target.moveSpeed
+      operation: 2
+      value: -15
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 1
+      durationSeconds: 2
+  presentationSummary: "Every third attack slows its target."

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9f42306d10298842b03a53474eff57a, type: 3}
+  m_Name: Research_Hive_AcidBlood
+  m_EditorClassIdentifier:
+  id: HIVE_RES_01
+  displayName: Acid Blood
+  description: "On death, deal 8% maximum-HP magic damage nearby, capped against bosses."
+  dataVersion: 1
+  isEnabled: 1
+  tags: [Hive, Organic, DeathTrigger]
+  icon: {fileID: 0}
+  affinityRace: {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
+  rarity: 3
+  compatibility:
+    allowedRaces:
+    - {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
+    requiredTags: [Organic]
+    excludedTags: []
+    allowNeutral: 0
+  modifiers: []
+  triggers:
+  - eventType: 1
+    requiredTags: [Organic]
+    probability: 1
+    everyNthEvent: 1
+    cooldownSeconds: 0
+    maximumTriggers: 1
+    modifiers:
+    - targetSelector: eventTarget
+      stat: nearbyEnemies.magicDamageFromSourceMaxHealth
+      operation: 1
+      value: 8
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 1
+      durationSeconds: 0
+  stackRule: 0
+  duplicatesAllowed: 0
+  canBeMoved: 1
+  reassignmentCost: 0
+  shopWeight: 1

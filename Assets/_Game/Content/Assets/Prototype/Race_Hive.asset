@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38e894ece70df5044a78a91ee43e7e0b, type: 3}
+  m_Name: Race_Hive
+  m_EditorClassIdentifier:
+  id: RACE_HIVE
+  displayName: Hive
+  description: "Adaptive biological civilization focused on replacement, evolution, poison, armor, flyers, parasites, and creep support."
+  dataVersion: 1
+  isEnabled: 1
+  tags: [Hive, Organic]
+  icon: {fileID: 0}
+  uniqueResourceName: Biomass
+  identityColor: {r: 0.32941177, g: 0.50980395, b: 0.20784314, a: 1}
+  nexus: {fileID: 11400000, guid: 30000000000000000000000000000004, type: 2}
+  startingUnit: {fileID: 11400000, guid: 30000000000000000000000000000006, type: 2}
+  permittedUnits:
+  - {fileID: 11400000, guid: 30000000000000000000000000000006, type: 2}
+  - {fileID: 11400000, guid: 30000000000000000000000000000007, type: 2}
+  - {fileID: 11400000, guid: 30000000000000000000000000000008, type: 2}
+  permittedStructures:
+  - {fileID: 11400000, guid: 3000000000000000000000000000000a, type: 2}
+  permittedResearch:
+  - {fileID: 11400000, guid: 3000000000000000000000000000000b, type: 2}
+  permittedArtifacts:
+  - {fileID: 11400000, guid: 3000000000000000000000000000000c, type: 2}
+  ruleModules:
+  - {fileID: 11400000, guid: 30000000000000000000000000000001, type: 2}
+  - {fileID: 11400000, guid: 30000000000000000000000000000002, type: 2}
+  - {fileID: 11400000, guid: 30000000000000000000000000000003, type: 2}

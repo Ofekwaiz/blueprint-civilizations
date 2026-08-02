@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bbc974b1a9db104fad7fd89e857196e, type: 3}
+  m_Name: Artifact_Hive_LivingHiveHeart
+  m_EditorClassIdentifier:
+  id: HIVE_ART_01
+  displayName: Living Hive Heart
+  description: "All Hive spawn intervals are reduced by 6%; Nexus health is reduced by 8%."
+  dataVersion: 1
+  isEnabled: 1
+  tags: [Hive, Artifact, Swarm]
+  icon: {fileID: 0}
+  affinityRace: {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
+  rarity: 3
+  compatibility:
+    allowedRaces:
+    - {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
+    requiredTags: []
+    excludedTags: []
+    allowNeutral: 1
+  modifiers:
+  - targetSelector: all.tag:Hive
+    stat: spawnInterval
+    operation: 2
+    value: -6
+    conditionTags: [Hive]
+    sourcePriority: 0
+    durationScope: 2
+    durationSeconds: 0
+  - targetSelector: ownerNexus
+    stat: maxHealth
+    operation: 2
+    value: -8
+    conditionTags: []
+    sourcePriority: 0
+    durationScope: 2
+    durationSeconds: 0
+  triggers: []
+  unique: 1
+  stackable: 0
+  shopWeight: 1
+  incompatibilities: []

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b12388706cdfac4aa60f11ef6aae364, type: 3}
+  m_Name: Evolution_Hive_Spider_Venom
+  m_EditorClassIdentifier:
+  id: EVOLUTION_HIVE_SPIDER_VENOM
+  displayName: Venom Spider
+  description: "Ascension I path that adds a poison damage-over-time identity."
+  dataVersion: 1
+  isEnabled: 1
+  tags: [Hive, Organic, Poison]
+  icon: {fileID: 0}
+  requiredAscension: 1
+  sourceBlueprintId: HIVE_SPIDER
+  grantedTags: [Poison]
+  modifiers:
+  - targetSelector: self
+    stat: poisonPower
+    operation: 1
+    value: 15
+    conditionTags: []
+    sourcePriority: 0
+    durationScope: 0
+    durationSeconds: 0
+  grantedAbilities: []
+  finalEvolutionOptions: []

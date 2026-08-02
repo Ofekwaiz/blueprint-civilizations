@@ -1,0 +1,53 @@
+.content-studio {
+    flex-grow: 1;
+    background-color: #202226;
+}
+
+.content-toolbar {
+    min-height: 28px;
+}
+
+.toolbar-spacer {
+    flex-grow: 1;
+}
+
+.content-split {
+    flex-grow: 1;
+    margin-top: 4px;
+}
+
+#content-list {
+    min-width: 240px;
+}
+
+#details {
+    padding: 8px 12px;
+}
+
+.identity-block {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #2d3036;
+    border-left-width: 3px;
+    border-left-color: #55a7d9;
+}
+
+.stable-id {
+    margin-top: 3px;
+    color: #a8d8f5;
+    -unity-font-style: bold;
+}
+
+.validation-output {
+    min-height: 52px;
+    max-height: 150px;
+    padding: 8px 10px;
+    white-space: normal;
+    background-color: #17191c;
+    border-top-width: 1px;
+    border-top-color: #3d4148;
+}
+
+.disabled-content {
+    opacity: 0.55;
+}

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using BlueprintCivilizations.Core;
 using UnityEngine;
 
@@ -7,14 +8,17 @@ namespace BlueprintCivilizations.Content.Definitions
     public sealed class EvolutionDefinition : ContentDefinition
     {
         [SerializeField] private AscensionLevel requiredAscension = AscensionLevel.AscensionOne;
-        [SerializeField] private float healthMultiplier = 1f;
-        [SerializeField] private float damageMultiplier = 1f;
-        [SerializeField] private float spawnIntervalMultiplier = 1f;
-        [TextArea] [SerializeField] private string rulesText = "";
+        [SerializeField] private string sourceBlueprintId = "";
+        [SerializeField] private List<string> grantedTags = new();
+        [SerializeField] private List<ModifierSpec> modifiers = new();
+        [SerializeField] private List<AbilityDefinition> grantedAbilities = new();
+        [SerializeField] private List<EvolutionDefinition> finalEvolutionOptions = new();
+
         public AscensionLevel RequiredAscension => requiredAscension;
-        public float HealthMultiplier => healthMultiplier;
-        public float DamageMultiplier => damageMultiplier;
-        public float SpawnIntervalMultiplier => spawnIntervalMultiplier;
-        public string RulesText => rulesText;
+        public string SourceBlueprintId => sourceBlueprintId;
+        public IReadOnlyList<string> GrantedTags => grantedTags.AsReadOnly();
+        public IReadOnlyList<ModifierSpec> Modifiers => modifiers.AsReadOnly();
+        public IReadOnlyList<AbilityDefinition> GrantedAbilities => grantedAbilities.AsReadOnly();
+        public IReadOnlyList<EvolutionDefinition> FinalEvolutionOptions => finalEvolutionOptions.AsReadOnly();
     }
 }
