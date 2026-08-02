@@ -7,7 +7,7 @@ namespace BlueprintCivilizations.Content.Definitions
     [CreateAssetMenu(menuName = "Blueprint Civilizations/Definitions/Augment", fileName = "Augment_")]
     public sealed class AugmentDefinition : ContentDefinition
     {
-        [SerializeField] private PhilosophyDefinition philosophy;
+        [SerializeField] private PhilosophyDefinition philosophy = null;
         [SerializeField] private ContentRarity rarity = ContentRarity.Common;
         [SerializeField] private List<ModifierSpec> modifiers = new();
         [SerializeField] private List<TriggerSpec> triggers = new();

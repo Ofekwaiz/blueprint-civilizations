@@ -8,12 +8,12 @@ namespace BlueprintCivilizations.Content.Definitions
     [Serializable]
     public sealed class TriggerSpec
     {
-        [SerializeField] private TriggerEventType eventType;
+        [SerializeField] private TriggerEventType eventType = TriggerEventType.OnSpawn;
         [SerializeField] private List<string> requiredTags = new();
         [Range(0, 1)] [SerializeField] private float probability = 1f;
         [Min(1)] [SerializeField] private int everyNthEvent = 1;
-        [Min(0)] [SerializeField] private float cooldownSeconds;
-        [Min(0)] [SerializeField] private int maximumTriggers;
+        [Min(0)] [SerializeField] private float cooldownSeconds = 0;
+        [Min(0)] [SerializeField] private int maximumTriggers = 0;
         [SerializeField] private List<ModifierSpec> modifiers = new();
 
         public TriggerEventType EventType => eventType;

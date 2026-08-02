@@ -10,12 +10,12 @@ namespace BlueprintCivilizations.Content.Definitions
     {
         [SerializeField] private string targetSelector = "self";
         [SerializeField] private string stat = "";
-        [SerializeField] private ModifierOperation operation;
-        [SerializeField] private float value;
+        [SerializeField] private ModifierOperation operation = ModifierOperation.FlatAdd;
+        [SerializeField] private float value = 0;
         [SerializeField] private List<string> conditionTags = new();
-        [SerializeField] private int sourcePriority;
+        [SerializeField] private int sourcePriority = 0;
         [SerializeField] private ModifierDurationScope durationScope = ModifierDurationScope.PlanningSnapshot;
-        [Min(0)] [SerializeField] private float durationSeconds;
+        [Min(0)] [SerializeField] private float durationSeconds = 0;
 
         public string TargetSelector => targetSelector;
         public string Stat => stat;

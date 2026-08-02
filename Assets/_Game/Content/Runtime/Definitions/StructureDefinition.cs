@@ -7,8 +7,8 @@ namespace BlueprintCivilizations.Content.Definitions
     [CreateAssetMenu(menuName = "Blueprint Civilizations/Definitions/Structure", fileName = "Structure_")]
     public sealed class StructureDefinition : ContentDefinition
     {
-        [SerializeField] private RaceDefinition race;
-        [SerializeField] private bool isNeutral;
+        [SerializeField] private RaceDefinition race = null;
+        [SerializeField] private bool isNeutral = false;
         [SerializeField] private ContentTier tier = ContentTier.Tier1;
         [Min(0)] [SerializeField] private int goldCost = 2;
         [SerializeField] private ContentPoolKind poolKind = ContentPoolKind.PrivateRace;
@@ -17,10 +17,10 @@ namespace BlueprintCivilizations.Content.Definitions
         [SerializeField] private bool spawnsOnBattlefield = true;
         [SerializeField] private LaneCompatibility laneCompatibility = LaneCompatibility.Any;
         [Min(1)] [SerializeField] private int maximumPopulation = 1;
-        [Min(0)] [SerializeField] private float reconstructionInterval;
+        [Min(0)] [SerializeField] private float reconstructionInterval = 0;
         [Min(1)] [SerializeField] private float baseHealth = 100;
-        [SerializeField] private float armor;
-        [SerializeField] private float resistance;
+        [SerializeField] private float armor = 0;
+        [SerializeField] private float resistance = 0;
         [SerializeField] private List<ModifierSpec> adjacencyModifiers = new();
         [SerializeField] private List<AbilityDefinition> abilities = new();
         [SerializeField] private List<EvolutionDefinition> evolutionOptions = new();

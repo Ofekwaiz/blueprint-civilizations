@@ -8,8 +8,8 @@ namespace BlueprintCivilizations.Content.Definitions
     public sealed class NexusDefinition : ContentDefinition
     {
         [Min(1)] [SerializeField] private float baseHealth = 1000;
-        [SerializeField] private float baseArmor;
-        [SerializeField] private float baseResistance;
+        [SerializeField] private float baseArmor = 0;
+        [SerializeField] private float baseResistance = 0;
         [Min(0)] [SerializeField] private float regenerationDelaySeconds = 5;
         [SerializeField] private List<AbilityDefinition> ruleModules = new();
 

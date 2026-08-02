@@ -10,16 +10,16 @@ namespace BlueprintCivilizations.Content.Definitions
     {
         [Min(1)] [SerializeField] private float maxHealth = 30;
         [Min(0)] [SerializeField] private float attackDamage = 5;
-        [Min(0.01f)] [SerializeField] private float attacksPerSecond = 1f;
+        [Min(0.01f)] [SerializeField] private float attackIntervalSeconds = 1f;
         [Min(0)] [SerializeField] private float attackRange = 1f;
         [Min(0)] [SerializeField] private float movementSpeed = 2f;
-        [SerializeField] private float armor;
-        [SerializeField] private float resistance;
+        [SerializeField] private float armor = 0;
+        [SerializeField] private float resistance = 0;
 
         public float MaxHealth => maxHealth;
         public float AttackDamage => attackDamage;
-        public float AttacksPerSecond => attacksPerSecond;
-        public float AttackIntervalSeconds => attacksPerSecond <= 0 ? float.PositiveInfinity : 1f / attacksPerSecond;
+        public float AttackIntervalSeconds => attackIntervalSeconds;
+        public float AttacksPerSecond => attackIntervalSeconds <= 0 ? 0 : 1f / attackIntervalSeconds;
         public float AttackRange => attackRange;
         public float MovementSpeed => movementSpeed;
         public float Armor => armor;
@@ -31,9 +31,9 @@ namespace BlueprintCivilizations.Content.Definitions
     {
         [Min(0.05f)] [SerializeField] private float spawnInterval = 6f;
         [Min(1)] [SerializeField] private int maximumPopulation = 3;
-        [Min(0)] [SerializeField] private float initialSpawnDelay;
+        [Min(0)] [SerializeField] private float initialSpawnDelay = 0;
         [Min(1)] [SerializeField] private int spawnBatchSize = 1;
-        [SerializeField] private int spawnPriority;
+        [SerializeField] private int spawnPriority = 0;
 
         public float SpawnInterval => spawnInterval;
         public int MaximumPopulation => maximumPopulation;
@@ -47,18 +47,67 @@ namespace BlueprintCivilizations.Content.Definitions
     {
         [SerializeField] private TargetPriority priority = TargetPriority.Nearest;
         [SerializeField] private bool canTargetGround = true;
-        [SerializeField] private bool canTargetFlying;
+        [SerializeField] private bool canTargetFlying = false;
 
         public TargetPriority Priority => priority;
         public bool CanTargetGround => canTargetGround;
         public bool CanTargetFlying => canTargetFlying;
     }
 
+    /// <summary>One authored refinement that may be selected after purchasing a duplicate copy.</summary>
+    [Serializable]
+    public sealed class PerCopyStatUpgradeOption
+    {
+        [SerializeField] private string id = "";
+        [SerializeField] private string displayName = "";
+        [Min(1)] [SerializeField] private int maximumSelections = 1;
+        [SerializeField] private ModifierSpec modifier = new();
+
+        public string Id => id;
+        public string DisplayName => displayName;
+        public int MaximumSelections => maximumSelections;
+        public ModifierSpec Modifier => modifier;
+    }
+
+    /// <summary>Copy-count milestones that unlock the three research sockets.</summary>
+    [Serializable]
+    public sealed class SocketMilestoneConfiguration
+    {
+        [Min(1)] [SerializeField] private int firstSocketCopies = 1;
+        [Min(1)] [SerializeField] private int secondSocketCopies = 4;
+        [Min(1)] [SerializeField] private int thirdSocketCopies = 9;
+
+        public int FirstSocketCopies => firstSocketCopies;
+        public int SecondSocketCopies => secondSocketCopies;
+        public int ThirdSocketCopies => thirdSocketCopies;
+    }
+
+    /// <summary>Optional presentation-only assets; simulation code must not depend on these references.</summary>
+    [Serializable]
+    public sealed class UnitPresentationReferences
+    {
+        [SerializeField] private GameObject visualPrefab = null;
+        [SerializeField] private RuntimeAnimatorController animatorController = null;
+        [SerializeField] private AudioClip spawnAudio = null;
+        [SerializeField] private AudioClip attackAudio = null;
+        [SerializeField] private AudioClip deathAudio = null;
+        [SerializeField] private GameObject spawnVfxPrefab = null;
+        [SerializeField] private GameObject deathVfxPrefab = null;
+
+        public GameObject VisualPrefab => visualPrefab;
+        public RuntimeAnimatorController AnimatorController => animatorController;
+        public AudioClip SpawnAudio => spawnAudio;
+        public AudioClip AttackAudio => attackAudio;
+        public AudioClip DeathAudio => deathAudio;
+        public GameObject SpawnVfxPrefab => spawnVfxPrefab;
+        public GameObject DeathVfxPrefab => deathVfxPrefab;
+    }
+
     [CreateAssetMenu(menuName = "Blueprint Civilizations/Definitions/Unit", fileName = "Unit_")]
     public sealed class UnitDefinition : ContentDefinition
     {
-        [SerializeField] private RaceDefinition race;
-        [SerializeField] private bool isNeutral;
+        [SerializeField] private RaceDefinition race = null;
+        [SerializeField] private bool isNeutral = false;
         [SerializeField] private ContentTier tier = ContentTier.Tier1;
         [Min(0)] [SerializeField] private int goldCost = 1;
         [SerializeField] private ContentPoolKind poolKind = ContentPoolKind.PrivateRace;
@@ -71,11 +120,13 @@ namespace BlueprintCivilizations.Content.Definitions
         [SerializeField] private MovementProfileKind movementProfile = MovementProfileKind.Ground;
         [SerializeField] private UnitTargetingProfile targeting = new();
         [SerializeField] private List<AbilityDefinition> abilities = new();
+        [SerializeField] private List<PerCopyStatUpgradeOption> permittedPerCopyStatUpgrades = new();
+        [SerializeField] private SocketMilestoneConfiguration socketMilestones = new();
         [Min(1)] [SerializeField] private int ascensionOneThreshold = 5;
         [Min(1)] [SerializeField] private int ascensionTwoThreshold = 10;
         [SerializeField] private List<EvolutionDefinition> ascensionOneOptions = new();
         [SerializeField] private List<EvolutionDefinition> ascensionTwoOptions = new();
-        [SerializeField] private GameObject visualPrefab;
+        [SerializeField] private UnitPresentationReferences presentation = new();
 
         public RaceDefinition Race => race;
         public bool IsNeutral => isNeutral;
@@ -91,10 +142,13 @@ namespace BlueprintCivilizations.Content.Definitions
         public MovementProfileKind MovementProfile => movementProfile;
         public UnitTargetingProfile Targeting => targeting;
         public IReadOnlyList<AbilityDefinition> Abilities => abilities.AsReadOnly();
+        public IReadOnlyList<PerCopyStatUpgradeOption> PermittedPerCopyStatUpgrades => permittedPerCopyStatUpgrades.AsReadOnly();
+        public SocketMilestoneConfiguration SocketMilestones => socketMilestones;
         public int AscensionOneThreshold => ascensionOneThreshold;
         public int AscensionTwoThreshold => ascensionTwoThreshold;
         public IReadOnlyList<EvolutionDefinition> AscensionOneOptions => ascensionOneOptions.AsReadOnly();
         public IReadOnlyList<EvolutionDefinition> AscensionTwoOptions => ascensionTwoOptions.AsReadOnly();
-        public GameObject VisualPrefab => visualPrefab;
+        public UnitPresentationReferences Presentation => presentation;
+        public GameObject VisualPrefab => presentation?.VisualPrefab;
     }
 }

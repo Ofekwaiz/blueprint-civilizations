@@ -86,6 +86,7 @@ namespace BlueprintCivilizations.Content.Validation
         {
             if (!unit.IsNeutral && unit.Race == null)
                 Add(unit, context, issues, ValidationSeverity.Error, "race", "A non-neutral unit requires a race.", "Assign its owning race.");
+            ValidateReference(unit, context, issues, "race", unit.Race);
             if (unit.IsNeutral && unit.PoolKind != ContentPoolKind.SharedNeutral)
                 Add(unit, context, issues, ValidationSeverity.Error, "poolKind", "A neutral unit must use the shared neutral pool.", "Set Pool Kind to Shared Neutral.");
             if ((int)unit.Tier < 1 || (int)unit.Tier > 5)
@@ -99,7 +100,11 @@ namespace BlueprintCivilizations.Content.Validation
             {
                 if (unit.CombatStats.MaxHealth <= 0) Add(unit, context, issues, ValidationSeverity.Error, "combatStats.maxHealth", "Max health must be greater than zero.", "Set a positive value.");
                 if (unit.CombatStats.AttackDamage < 0) Add(unit, context, issues, ValidationSeverity.Error, "combatStats.attackDamage", "Attack damage cannot be negative.", "Set a non-negative value.");
-                if (unit.CombatStats.AttacksPerSecond <= 0) Add(unit, context, issues, ValidationSeverity.Error, "combatStats.attacksPerSecond", "Attacks per second must be greater than zero.", "Set a positive attack rate.");
+                if (unit.CombatStats.AttackIntervalSeconds <= 0) Add(unit, context, issues, ValidationSeverity.Error, "combatStats.attackIntervalSeconds", "Attack interval must be greater than zero.", "Set a positive interval in seconds.");
+                if (unit.CombatStats.AttackRange < 0) Add(unit, context, issues, ValidationSeverity.Error, "combatStats.attackRange", "Attack range cannot be negative.", "Set zero or a positive range.");
+                if (unit.CombatStats.MovementSpeed < 0) Add(unit, context, issues, ValidationSeverity.Error, "combatStats.movementSpeed", "Movement speed cannot be negative.", "Set zero for stationary content or a positive speed.");
+                if (unit.CombatStats.Armor < 0) Add(unit, context, issues, ValidationSeverity.Error, "combatStats.armor", "Armor cannot be negative.", "Set zero or a positive armor value.");
+                if (unit.CombatStats.Resistance < 0) Add(unit, context, issues, ValidationSeverity.Error, "combatStats.resistance", "Resistance cannot be negative.", "Set zero or a positive resistance value.");
             }
             if (unit.ProductionStats == null)
                 Add(unit, context, issues, ValidationSeverity.Critical, "productionStats", "Production stats are missing.", "Restore the production stat block.");
@@ -111,6 +116,8 @@ namespace BlueprintCivilizations.Content.Validation
             }
             if (unit.AscensionOneThreshold < 1 || unit.AscensionTwoThreshold <= unit.AscensionOneThreshold)
                 Add(unit, context, issues, ValidationSeverity.Error, "ascensionTwoThreshold", "Ascension thresholds must be positive and ordered.", "Use prototype thresholds 5 and 10 unless configuration changes them.");
+            ValidatePerCopyUpgrades(unit, context, issues);
+            ValidateSocketMilestones(unit, context, issues);
             ValidateReferences(unit, context, issues, "abilities", unit.Abilities);
             ValidateReferences(unit, context, issues, "ascensionOneOptions", unit.AscensionOneOptions);
             ValidateReferences(unit, context, issues, "ascensionTwoOptions", unit.AscensionTwoOptions);
@@ -120,9 +127,47 @@ namespace BlueprintCivilizations.Content.Validation
                 Add(unit, context, issues, ValidationSeverity.Warning, "visualPrefab", "Visual prefab is not assigned.", "Assign a presentation prefab before runtime presentation work.");
         }
 
+        private static void ValidatePerCopyUpgrades(UnitDefinition unit, ValidationContext context, List<ValidationIssue> issues)
+        {
+            if (unit.PermittedPerCopyStatUpgrades.Any(option => option == null))
+                Add(unit, context, issues, ValidationSeverity.Error, "permittedPerCopyStatUpgrades", "Upgrade list contains a missing entry.", "Remove the empty entry or author the upgrade.");
+
+            var upgrades = unit.PermittedPerCopyStatUpgrades.Where(option => option != null).ToList();
+            if (upgrades.Any(option => string.IsNullOrWhiteSpace(option.Id)))
+                Add(unit, context, issues, ValidationSeverity.Error, "permittedPerCopyStatUpgrades.id", "Every per-copy upgrade requires an ID.", "Assign a stable local upgrade ID.");
+            if (upgrades.Where(option => !string.IsNullOrWhiteSpace(option.Id)).GroupBy(option => option.Id, StringComparer.OrdinalIgnoreCase).Any(group => group.Count() > 1))
+                Add(unit, context, issues, ValidationSeverity.Error, "permittedPerCopyStatUpgrades.id", "Per-copy upgrade IDs must be unique within the unit.", "Rename the duplicate upgrade ID.");
+            if (upgrades.Any(option => string.IsNullOrWhiteSpace(option.DisplayName)))
+                Add(unit, context, issues, ValidationSeverity.Error, "permittedPerCopyStatUpgrades.displayName", "Every per-copy upgrade requires a display name.", "Enter a player-facing name.");
+            if (upgrades.Any(option => option.MaximumSelections < 1))
+                Add(unit, context, issues, ValidationSeverity.Error, "permittedPerCopyStatUpgrades.maximumSelections", "Maximum selections must be at least one.", "Set a legal selection cap.");
+            foreach (var option in upgrades.Where(option => option.Modifier != null))
+                ValidateModifiers(unit, context, issues, "permittedPerCopyStatUpgrades.modifier", new[] { option.Modifier });
+            if (upgrades.Any(option => option.Modifier == null))
+                Add(unit, context, issues, ValidationSeverity.Error, "permittedPerCopyStatUpgrades.modifier", "Per-copy upgrade modifier is missing.", "Author the statistic change for the upgrade.");
+        }
+
+        private static void ValidateSocketMilestones(UnitDefinition unit, ValidationContext context, List<ValidationIssue> issues)
+        {
+            var milestones = unit.SocketMilestones;
+            if (milestones == null)
+            {
+                Add(unit, context, issues, ValidationSeverity.Critical, "socketMilestones", "Socket milestone configuration is missing.", "Restore the socket milestone block.");
+                return;
+            }
+
+            if (milestones.FirstSocketCopies < 1 ||
+                milestones.SecondSocketCopies <= milestones.FirstSocketCopies ||
+                milestones.ThirdSocketCopies <= milestones.SecondSocketCopies)
+            {
+                Add(unit, context, issues, ValidationSeverity.Error, "socketMilestones", "Socket copy milestones must be positive and strictly increasing.", "Use the prototype milestones 1, 4, and 9.");
+            }
+        }
+
         private static void ValidateStructure(StructureDefinition structure, ValidationContext context, List<ValidationIssue> issues)
         {
             if (!structure.IsNeutral && structure.Race == null) Add(structure, context, issues, ValidationSeverity.Error, "race", "A non-neutral structure requires a race.", "Assign its owning race.");
+            ValidateReference(structure, context, issues, "race", structure.Race);
             if (structure.IsNeutral && structure.PoolKind != ContentPoolKind.SharedNeutral) Add(structure, context, issues, ValidationSeverity.Error, "poolKind", "A neutral structure must use the shared neutral pool.", "Set Pool Kind to Shared Neutral.");
             if (structure.GoldCost < 0) Add(structure, context, issues, ValidationSeverity.Error, "goldCost", "Gold cost cannot be negative.", "Set a non-negative cost.");
             if (structure.ShopPoolSize < 1) Add(structure, context, issues, ValidationSeverity.Error, "shopPoolSize", "Shop pool size must be at least 1.", "Use the configured tier pool size.");
@@ -131,6 +176,8 @@ namespace BlueprintCivilizations.Content.Validation
             if (structure.AdjacencyModifiers.Count == 0 && structure.Abilities.Count == 0)
                 Add(structure, context, issues, ValidationSeverity.Warning, "adjacencyModifiers", "Structure has no structured effect.", "Add an adjacency modifier or ability module.");
             ValidateModifiers(structure, context, issues, "adjacencyModifiers", structure.AdjacencyModifiers);
+            ValidateReferences(structure, context, issues, "abilities", structure.Abilities);
+            ValidateReferences(structure, context, issues, "evolutionOptions", structure.EvolutionOptions);
         }
 
         private static void ValidateRace(RaceDefinition race, ValidationContext context, List<ValidationIssue> issues)
@@ -138,12 +185,21 @@ namespace BlueprintCivilizations.Content.Validation
             if (string.IsNullOrWhiteSpace(race.UniqueResourceName)) Add(race, context, issues, ValidationSeverity.Error, "uniqueResourceName", "Race resource name is required.", "Enter the Bible-defined resource name.");
             if (race.Nexus == null) Add(race, context, issues, ValidationSeverity.Error, "nexus", "Race Nexus definition is required.", "Assign the race's Nexus definition.");
             if (race.StartingUnit == null) Add(race, context, issues, ValidationSeverity.Error, "startingUnit", "Starting unit is required.", "Assign the Bible-defined starting blueprint.");
+            ValidateReference(race, context, issues, "nexus", race.Nexus);
+            ValidateReference(race, context, issues, "startingUnit", race.StartingUnit);
+            ValidateReferences(race, context, issues, "permittedUnits", race.PermittedUnits);
+            ValidateReferences(race, context, issues, "permittedStructures", race.PermittedStructures);
+            ValidateReferences(race, context, issues, "permittedResearch", race.PermittedResearch);
+            ValidateReferences(race, context, issues, "permittedArtifacts", race.PermittedArtifacts);
+            ValidateReferences(race, context, issues, "ruleModules", race.RuleModules);
         }
 
         private static void ValidateResearch(ResearchDefinition research, ValidationContext context, List<ValidationIssue> issues)
         {
             if (research.Modifiers.Count == 0 && research.Triggers.Count == 0) Add(research, context, issues, ValidationSeverity.Error, "modifiers", "Research has no structured effect.", "Add at least one modifier or trigger.");
             if (research.ShopWeight <= 0) Add(research, context, issues, ValidationSeverity.Error, "shopWeight", "Shop weight must be greater than zero.", "Set a positive offer weight.");
+            ValidateReference(research, context, issues, "affinityRace", research.AffinityRace);
+            ValidateReferences(research, context, issues, "compatibility.allowedRaces", research.Compatibility.AllowedRaces);
             ValidateModifiers(research, context, issues, "modifiers", research.Modifiers);
             ValidateTriggers(research, context, issues, research.Triggers);
         }
@@ -153,6 +209,9 @@ namespace BlueprintCivilizations.Content.Validation
             if (artifact.Modifiers.Count == 0 && artifact.Triggers.Count == 0) Add(artifact, context, issues, ValidationSeverity.Error, "modifiers", "Artifact has no structured effect.", "Add at least one modifier or trigger.");
             if (artifact.Unique && artifact.Stackable) Add(artifact, context, issues, ValidationSeverity.Error, "stackable", "An artifact cannot be both unique and stackable.", "Choose one acquisition model.");
             if (artifact.ShopWeight <= 0) Add(artifact, context, issues, ValidationSeverity.Error, "shopWeight", "Shop weight must be greater than zero.", "Set a positive offer weight.");
+            ValidateReference(artifact, context, issues, "affinityRace", artifact.AffinityRace);
+            ValidateReferences(artifact, context, issues, "compatibility.allowedRaces", artifact.Compatibility.AllowedRaces);
+            ValidateReferences(artifact, context, issues, "incompatibilities", artifact.Incompatibilities);
             ValidateModifiers(artifact, context, issues, "modifiers", artifact.Modifiers);
             ValidateTriggers(artifact, context, issues, artifact.Triggers);
         }
@@ -160,10 +219,16 @@ namespace BlueprintCivilizations.Content.Validation
         private static void ValidateEvolution(EvolutionDefinition evolution, ValidationContext context, List<ValidationIssue> issues)
         {
             if (string.IsNullOrWhiteSpace(evolution.SourceBlueprintId)) Add(evolution, context, issues, ValidationSeverity.Error, "sourceBlueprintId", "Source blueprint ID is required.", "Enter the canonical blueprint ID.");
+            else if (!context.AllDefinitions.Any(definition =>
+                         definition is UnitDefinition or StructureDefinition &&
+                         string.Equals(definition.Id, evolution.SourceBlueprintId, StringComparison.OrdinalIgnoreCase)))
+                Add(evolution, context, issues, ValidationSeverity.Error, "sourceBlueprintId", $"Source blueprint ID '{evolution.SourceBlueprintId}' does not resolve to a unit or structure.", "Correct the ID or restore the source definition.");
             if (evolution.RequiredAscension == BlueprintCivilizations.Core.AscensionLevel.Base) Add(evolution, context, issues, ValidationSeverity.Error, "requiredAscension", "Evolution cannot require the base rank.", "Choose Ascension One or Two.");
             if (evolution.Modifiers.Count == 0 && evolution.GrantedAbilities.Count == 0 && evolution.GrantedTags.Count == 0)
                 Add(evolution, context, issues, ValidationSeverity.Error, "modifiers", "Evolution does not change behavior, tags, or statistics.", "Add a structured identity change.");
             ValidateModifiers(evolution, context, issues, "modifiers", evolution.Modifiers);
+            ValidateReferences(evolution, context, issues, "grantedAbilities", evolution.GrantedAbilities);
+            ValidateReferences(evolution, context, issues, "finalEvolutionOptions", evolution.FinalEvolutionOptions);
         }
 
         private static void ValidateAbility(AbilityDefinition ability, ValidationContext context, List<ValidationIssue> issues)
@@ -187,6 +252,7 @@ namespace BlueprintCivilizations.Content.Validation
         private static void ValidateAugment(AugmentDefinition augment, ValidationContext context, List<ValidationIssue> issues)
         {
             if (augment.Philosophy == null) Add(augment, context, issues, ValidationSeverity.Warning, "philosophy", "Augment has no philosophy affinity.", "Assign a philosophy or document it as adaptive/universal.");
+            ValidateReference(augment, context, issues, "philosophy", augment.Philosophy);
             if (augment.Modifiers.Count == 0 && augment.Triggers.Count == 0) Add(augment, context, issues, ValidationSeverity.Error, "modifiers", "Augment has no structured effect.", "Add a modifier or trigger.");
             ValidateModifiers(augment, context, issues, "modifiers", augment.Modifiers);
             ValidateTriggers(augment, context, issues, augment.Triggers);
@@ -215,6 +281,13 @@ namespace BlueprintCivilizations.Content.Validation
                 Add(owner, context, issues, ValidationSeverity.Error, fieldName, $"Definition '{duplicate.Key}' is referenced more than once.", "Remove the duplicate reference.");
             if (references.Any(value => value != null && !value.IsEnabled))
                 Add(owner, context, issues, ValidationSeverity.Warning, fieldName, "List references disabled content.", "Remove the reference or explicitly re-enable the dependency.");
+        }
+
+        private static void ValidateReference<T>(ContentDefinition owner, ValidationContext context, List<ValidationIssue> issues, string fieldName, T reference)
+            where T : ContentDefinition
+        {
+            if (reference != null && !reference.IsEnabled)
+                Add(owner, context, issues, ValidationSeverity.Warning, fieldName, $"Referenced content '{reference.Id}' is disabled.", "Remove the reference or explicitly re-enable the dependency.");
         }
 
         private static void ValidateModifiers(ContentDefinition owner, ValidationContext context, List<ValidationIssue> issues, string fieldName, IReadOnlyList<ModifierSpec> modifiers)

@@ -6,13 +6,13 @@ namespace BlueprintCivilizations.Content.Definitions
     [CreateAssetMenu(menuName = "Blueprint Civilizations/Definitions/Artifact", fileName = "Artifact_")]
     public sealed class ArtifactDefinition : ContentDefinition
     {
-        [SerializeField] private RaceDefinition affinityRace;
+        [SerializeField] private RaceDefinition affinityRace = null;
         [SerializeField] private ContentRarity rarity = ContentRarity.Rare;
         [SerializeField] private ContentCompatibility compatibility = new();
         [SerializeField] private List<ModifierSpec> modifiers = new();
         [SerializeField] private List<TriggerSpec> triggers = new();
         [SerializeField] private bool unique = true;
-        [SerializeField] private bool stackable;
+        [SerializeField] private bool stackable = false;
         [Min(0)] [SerializeField] private float shopWeight = 1f;
         [SerializeField] private List<ArtifactDefinition> incompatibilities = new();
 

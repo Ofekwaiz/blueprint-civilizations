@@ -7,6 +7,13 @@
     min-height: 28px;
 }
 
+#race-filter,
+#tier-filter,
+#status-filter {
+    min-width: 105px;
+    max-width: 150px;
+}
+
 .toolbar-spacer {
     flex-grow: 1;
 }
@@ -46,6 +53,36 @@
     background-color: #17191c;
     border-top-width: 1px;
     border-top-color: #3d4148;
+}
+
+.validation-issue {
+    margin-bottom: 4px;
+    padding: 4px 6px;
+    white-space: normal;
+    border-left-width: 3px;
+}
+
+.validation-info {
+    border-left-color: #65a8d8;
+}
+
+.validation-warning {
+    border-left-color: #d9a441;
+}
+
+.validation-error {
+    border-left-color: #db6a5c;
+}
+
+.validation-critical {
+    border-left-color: #ee3d4a;
+    -unity-font-style: bold;
+}
+
+.unit-section {
+    margin-bottom: 6px;
+    padding: 4px 6px;
+    background-color: #26292e;
 }
 
 .disabled-content {

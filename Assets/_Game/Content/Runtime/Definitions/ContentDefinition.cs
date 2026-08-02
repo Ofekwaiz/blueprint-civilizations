@@ -12,7 +12,7 @@ namespace BlueprintCivilizations.Content.Definitions
         [SerializeField] private int dataVersion = 1;
         [SerializeField] private bool isEnabled = true;
         [SerializeField] private List<string> tags = new();
-        [SerializeField] private Sprite icon;
+        [SerializeField] private Sprite icon = null;
 
         /// <summary>Immutable identifier used by saves, catalogs, and cross-content references.</summary>
         public string Id => id;

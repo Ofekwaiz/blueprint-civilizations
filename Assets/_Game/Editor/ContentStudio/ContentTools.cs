@@ -13,8 +13,9 @@ namespace BlueprintCivilizations.Editor.ContentStudio
     /// <summary>Menu commands and shared editor operations for authored content.</summary>
     public static class ContentTools
     {
+        private const float PrototypeSpawnIntervalSeconds = 6f;
+
         public const string ContentRoot = "Assets/_Game/Content/Assets";
-        public const string PrototypeFolder = ContentRoot + "/Prototype";
         public const string ConfigurationFolder = ContentRoot + "/Configuration";
         public const string DefaultCatalogPath = ConfigurationFolder + "/GameContentCatalog.asset";
 
@@ -65,45 +66,44 @@ namespace BlueprintCivilizations.Editor.ContentStudio
         [MenuItem("Tools/Blueprint Civilizations/Create or Repair Prototype Sample Content")]
         public static void CreateSamples()
         {
-            EnsureFolder(PrototypeFolder);
             EnsureFolder(ConfigurationFolder);
 
-            var larvaMote = Create<AbilityDefinition>("Ability_Hive_LarvaBiomassMote.asset", "ABILITY_HIVE_LARVA_BIOMASS_MOTE", "Biomass Mote", "On death, has a 20% chance to leave a Biomass Mote worth 0.25 Biomass.");
+            var larvaMote = Create<AbilityDefinition>("Abilities/Hive/Ability_Hive_LarvaBiomassMote.asset", "ABILITY_HIVE_LARVA_BIOMASS_MOTE", "Biomass Mote", "On death, has a 20% chance to leave a Biomass Mote worth 0.25 Biomass.");
             SetTrigger(larvaMote, TriggerEventType.OnDeath, "ownerRaceResource", ModifierOperation.FlatAdd, 0.25f, 0, 1, 0, 0.2f);
 
-            var spiderSlow = Create<AbilityDefinition>("Ability_Hive_WebSlow.asset", "ABILITY_HIVE_WEB_SLOW", "Web Slow", "Every third attack applies 15% slow for 2 seconds.");
+            var spiderSlow = Create<AbilityDefinition>("Abilities/Hive/Ability_Hive_WebSlow.asset", "ABILITY_HIVE_WEB_SLOW", "Web Slow", "Every third attack applies 15% slow for 2 seconds.");
             SetTrigger(spiderSlow, TriggerEventType.OnAttack, "target.moveSpeed", ModifierOperation.PercentMultiply, -15, 2, 0, 0, 1, 3);
 
-            var beetleCarapace = Create<AbilityDefinition>("Ability_Hive_ShellCarapace.asset", "ABILITY_HIVE_SHELL_CARAPACE", "Shell Carapace", "For the first 4 seconds after spawning, gain 25 Armor.");
+            var beetleCarapace = Create<AbilityDefinition>("Abilities/Hive/Ability_Hive_ShellCarapace.asset", "ABILITY_HIVE_SHELL_CARAPACE", "Shell Carapace", "For the first 4 seconds after spawning, gain 25 Armor.");
             SetTrigger(beetleCarapace, TriggerEventType.OnSpawn, "self.armor", ModifierOperation.FlatAdd, 25, 4, 0, 1);
 
-            var nexus = Create<NexusDefinition>("Nexus_Hive_BroodQueen.asset", "NEXUS_HIVE_BROOD_QUEEN", "Brood Queen", "Hive Nexus and adaptation engine.");
+            var nexus = Create<NexusDefinition>("Races/Hive/Nexus_Hive_BroodQueen.asset", "NEXUS_HIVE_BROOD_QUEEN", "Brood Queen", "Hive Nexus and adaptation engine.");
             SetFloat(nexus, "baseHealth", 1000);
             SetFloat(nexus, "regenerationDelaySeconds", 5);
 
-            var race = Create<RaceDefinition>("Race_Hive.asset", "RACE_HIVE", "Hive", "Adaptive biological civilization focused on replacement, evolution, poison, armor, flyers, parasites, and creep support.");
+            var race = Create<RaceDefinition>("Races/Hive/Race_Hive.asset", "RACE_HIVE", "Hive", "Adaptive biological civilization focused on replacement, evolution, poison, armor, flyers, parasites, and creep support.");
             SetString(race, "uniqueResourceName", "Biomass");
             SetColor(race, "identityColor", new Color32(0x54, 0x82, 0x35, 0xFF));
             SetObject(race, "nexus", nexus);
             SetTags(race, "Hive", "Organic");
 
-            var larva = Create<UnitDefinition>("Unit_Hive_Larva.asset", "HIVE_LARVA", "Larva Brood", "Melee brood. On death, may leave a Biomass Mote worth 0.25 Biomass.");
-            ConfigureUnit(larva, race, 1, 1, 70, 7, 1f, 6, 6, "Melee", larvaMote, "Hive", "Organic", "Swarm", "Melee");
+            var larva = Create<UnitDefinition>("Units/Hive/Unit_Hive_Larva.asset", "HIVE_LARVA", "Larva Brood", "Melee brood. On death, may leave a Biomass Mote worth 0.25 Biomass.");
+            ConfigureUnit(larva, race, new UnitSeed(1, 1, 70, 7, 1f, 6, "Melee"), larvaMote, "Hive", "Organic", "Swarm", "Melee");
 
-            var spider = Create<UnitDefinition>("Unit_Hive_Spider.asset", "HIVE_SPIDER", "Web Spider", "Ranged brood. Every third attack applies a 15% slow for 2 seconds.");
-            ConfigureUnit(spider, race, 1, 2, 95, 12, 0.85f, 4, 6, "Ranged", spiderSlow, "Hive", "Organic", "Ranged");
+            var spider = Create<UnitDefinition>("Units/Hive/Unit_Hive_Spider.asset", "HIVE_SPIDER", "Web Spider", "Ranged brood. Every third attack applies a 15% slow for 2 seconds.");
+            ConfigureUnit(spider, race, new UnitSeed(1, 2, 95, 12, 0.85f, 4, "Ranged"), spiderSlow, "Hive", "Organic", "Ranged");
 
-            var beetle = Create<UnitDefinition>("Unit_Hive_Beetle.asset", "HIVE_BEETLE", "Shell Beetle", "Melee tank. Gains 25 Armor for the first 4 seconds after spawning.");
-            ConfigureUnit(beetle, race, 1, 2, 180, 13, 0.65f, 3, 6, "Melee tank", beetleCarapace, "Hive", "Organic", "Frontline");
+            var beetle = Create<UnitDefinition>("Units/Hive/Unit_Hive_Beetle.asset", "HIVE_BEETLE", "Shell Beetle", "Melee tank. Gains 25 Armor for the first 4 seconds after spawning.");
+            ConfigureUnit(beetle, race, new UnitSeed(1, 2, 180, 13, 0.65f, 3, "Melee tank"), beetleCarapace, "Hive", "Organic", "Frontline");
 
-            var venom = Create<EvolutionDefinition>("Evolution_Hive_Spider_Venom.asset", "EVOLUTION_HIVE_SPIDER_VENOM", "Venom Spider", "Ascension I path that adds a poison damage-over-time identity.");
+            var venom = Create<EvolutionDefinition>("Evolutions/Hive/Evolution_Hive_Spider_Venom.asset", "EVOLUTION_HIVE_SPIDER_VENOM", "Venom Spider", "Ascension I path that adds a poison damage-over-time identity.");
             SetString(venom, "sourceBlueprintId", "HIVE_SPIDER");
             SetEnum(venom, "requiredAscension", (int)AscensionLevel.AscensionOne);
             SetTags(venom, "Hive", "Organic", "Poison");
             SetModifierList(venom, "modifiers", new ModifierSeed("self", "poisonPower", ModifierOperation.PercentAdd, 15));
             SetObjectArray(spider, "ascensionOneOptions", venom);
 
-            var creep = Create<StructureDefinition>("Structure_Hive_CreepTumor.asset", "HIVE_STR_01", "Creep Tumor", "Adjacent Organic blueprints gain move and spawn speed; its battlefield aura slows enemies.");
+            var creep = Create<StructureDefinition>("Structures/Hive/Structure_Hive_CreepTumor.asset", "HIVE_STR_01", "Creep Tumor", "Adjacent Organic blueprints gain move and spawn speed; its battlefield aura slows enemies.");
             SetObject(creep, "race", race);
             SetEnum(creep, "tier", (int)ContentTier.Tier1 - 1);
             SetInt(creep, "goldCost", 1);
@@ -115,13 +115,13 @@ namespace BlueprintCivilizations.Editor.ContentStudio
                 new ModifierSeed("adjacent.tag:Organic", "spawnSpeed", ModifierOperation.PercentAdd, 5));
             SetTags(creep, "Hive", "Organic", "Structure", "Creep");
 
-            var acidBlood = Create<ResearchDefinition>("Research_Hive_AcidBlood.asset", "HIVE_RES_01", "Acid Blood", "On death, deal 8% maximum-HP magic damage nearby, capped against bosses.");
+            var acidBlood = Create<ResearchDefinition>("Research/Hive/Research_Hive_AcidBlood.asset", "HIVE_RES_01", "Acid Blood", "On death, deal 8% maximum-HP magic damage nearby, capped against bosses.");
             SetObject(acidBlood, "affinityRace", race);
             SetEnum(acidBlood, "rarity", (int)ContentRarity.Race);
             SetTrigger(acidBlood, TriggerEventType.OnDeath, "nearbyEnemies.magicDamageFromSourceMaxHealth", ModifierOperation.PercentAdd, 8, 0, 1, 0);
             SetTags(acidBlood, "Hive", "Organic", "DeathTrigger");
 
-            var hiveHeart = Create<ArtifactDefinition>("Artifact_Hive_LivingHiveHeart.asset", "HIVE_ART_01", "Living Hive Heart", "All Hive spawn intervals are reduced by 6%; Nexus health is reduced by 8%.");
+            var hiveHeart = Create<ArtifactDefinition>("Artifacts/Hive/Artifact_Hive_LivingHiveHeart.asset", "HIVE_ART_01", "Living Hive Heart", "All Hive spawn intervals are reduced by 6%; Nexus health is reduced by 8%.");
             SetObject(hiveHeart, "affinityRace", race);
             SetEnum(hiveHeart, "rarity", (int)ContentRarity.Race);
             SetModifierList(hiveHeart, "modifiers",
@@ -136,7 +136,7 @@ namespace BlueprintCivilizations.Editor.ContentStudio
             SetObjectArray(race, "permittedArtifacts", hiveHeart);
             SetObjectArray(race, "ruleModules", larvaMote, spiderSlow, beetleCarapace);
 
-            var config = Create<GameBalanceConfigurationDefinition>("../Configuration/Config_GameBalance.asset", "CONFIG_GAME_BALANCE_V0_1", "Prototype Game Balance", "Authoritative configurable starting values for match, economy, shop, and combat timing.");
+            var config = Create<GameBalanceConfigurationDefinition>("Configuration/Config_GameBalance.asset", "CONFIG_GAME_BALANCE_V0_1", "Prototype Game Balance", "Authoritative configurable starting values for match, economy, shop, and combat timing.");
             ConfigureShopOdds(config);
 
             AssetDatabase.SaveAssets();
@@ -165,14 +165,27 @@ namespace BlueprintCivilizations.Editor.ContentStudio
             }
         }
 
+        public static string GetAuthoringFolder(Type definitionType)
+        {
+            if (definitionType == typeof(UnitDefinition)) return ContentRoot + "/Units/Custom";
+            if (definitionType == typeof(StructureDefinition)) return ContentRoot + "/Structures/Custom";
+            if (definitionType == typeof(ResearchDefinition)) return ContentRoot + "/Research/Custom";
+            if (definitionType == typeof(ArtifactDefinition)) return ContentRoot + "/Artifacts/Custom";
+            if (definitionType == typeof(EvolutionDefinition)) return ContentRoot + "/Evolutions/Custom";
+            if (definitionType == typeof(AbilityDefinition)) return ContentRoot + "/Abilities/Custom";
+            if (definitionType == typeof(PhilosophyDefinition) || definitionType == typeof(AugmentDefinition)) return ContentRoot + "/Philosophies/Custom";
+            if (definitionType == typeof(GameBalanceConfigurationDefinition)) return ConfigurationFolder;
+            if (definitionType == typeof(RaceDefinition) || definitionType == typeof(NexusDefinition)) return ContentRoot + "/Races/Custom";
+            return ContentRoot + "/Custom";
+        }
+
         private static T Create<T>(string fileName, string id, string displayName, string description) where T : ContentDefinition
         {
-            string path = fileName.StartsWith("../Configuration/", StringComparison.Ordinal)
-                ? ContentRoot + "/" + fileName.Substring(3)
-                : PrototypeFolder + "/" + fileName;
-            var asset = AssetDatabase.LoadAssetAtPath<T>(path);
+            string path = ContentRoot + "/" + fileName;
+            var asset = FindById<T>(id) ?? AssetDatabase.LoadAssetAtPath<T>(path);
             if (asset == null)
             {
+                EnsureFolder(path.Substring(0, path.LastIndexOf('/')));
                 asset = ScriptableObject.CreateInstance<T>();
                 asset.EditorInitialize(id, displayName);
                 AssetDatabase.CreateAsset(asset, path);
@@ -185,24 +198,63 @@ namespace BlueprintCivilizations.Editor.ContentStudio
             return asset;
         }
 
-        private static void ConfigureUnit(UnitDefinition unit, RaceDefinition race, int tier, int cost, float health, float damage, float attacksPerSecond, int population, float spawnInterval, string role, AbilityDefinition ability, params string[] tags)
+        private static T FindById<T>(string id) where T : ContentDefinition
+        {
+            return AssetDatabase.FindAssets($"t:{typeof(T).Name}")
+                .Select(guid => AssetDatabase.LoadAssetAtPath<T>(AssetDatabase.GUIDToAssetPath(guid)))
+                .FirstOrDefault(asset => asset != null && string.Equals(asset.Id, id, StringComparison.OrdinalIgnoreCase));
+        }
+
+        private static void ConfigureUnit(UnitDefinition unit, RaceDefinition race, UnitSeed seed, AbilityDefinition ability, params string[] tags)
         {
             SetObject(unit, "race", race);
             SetBool(unit, "isNeutral", false);
-            SetEnum(unit, "tier", tier - 1);
-            SetInt(unit, "goldCost", cost);
+            SetEnum(unit, "tier", seed.Tier - 1);
+            SetInt(unit, "goldCost", seed.Cost);
             SetEnum(unit, "poolKind", (int)ContentPoolKind.PrivateRace);
             SetInt(unit, "shopPoolSize", 18);
             SetFloat(unit, "baseShopWeight", 1);
-            SetString(unit, "role", role);
-            SetFloat(unit, "combatStats.maxHealth", health);
-            SetFloat(unit, "combatStats.attackDamage", damage);
-            SetFloat(unit, "combatStats.attacksPerSecond", attacksPerSecond);
-            SetFloat(unit, "productionStats.spawnInterval", spawnInterval);
-            SetInt(unit, "productionStats.maximumPopulation", population);
+            SetString(unit, "role", seed.Role);
+            SetFloat(unit, "combatStats.maxHealth", seed.Health);
+            SetFloat(unit, "combatStats.attackDamage", seed.Damage);
+            SetFloat(unit, "combatStats.attackIntervalSeconds", 1f / seed.AttacksPerSecond);
+            SetFloat(unit, "productionStats.spawnInterval", PrototypeSpawnIntervalSeconds);
+            SetInt(unit, "productionStats.maximumPopulation", seed.MaximumPopulation);
             SetInt(unit, "productionStats.spawnBatchSize", 1);
             SetObjectArray(unit, "abilities", ability);
+            SetPerCopyUpgrades(unit);
             SetTags(unit, tags);
+        }
+
+        private static void SetPerCopyUpgrades(UnitDefinition unit)
+        {
+            var serialized = new SerializedObject(unit);
+            var upgrades = serialized.FindProperty("permittedPerCopyStatUpgrades");
+            var seeds = new[]
+            {
+                new UpgradeSeed("refinement.hp", "Reinforced Pattern", "maxHealth", ModifierOperation.PercentAdd, 8),
+                new UpgradeSeed("refinement.damage", "Sharpened Pattern", "attackDamage", ModifierOperation.PercentAdd, 8),
+                new UpgradeSeed("refinement.spawn", "Accelerated Pattern", "spawnInterval", ModifierOperation.PercentMultiply, -6),
+                new UpgradeSeed("refinement.population", "Expanded Pattern", "maximumPopulation", ModifierOperation.FlatAdd, 1),
+                new UpgradeSeed("refinement.movement", "Mobile Pattern", "movementSpeed", ModifierOperation.PercentAdd, 5)
+            };
+            upgrades.arraySize = seeds.Length;
+            for (int index = 0; index < seeds.Length; index++)
+            {
+                var upgrade = upgrades.GetArrayElementAtIndex(index);
+                upgrade.FindPropertyRelative("id").stringValue = seeds[index].Id;
+                upgrade.FindPropertyRelative("displayName").stringValue = seeds[index].DisplayName;
+                upgrade.FindPropertyRelative("maximumSelections").intValue = 3;
+                var modifier = upgrade.FindPropertyRelative("modifier");
+                modifier.FindPropertyRelative("targetSelector").stringValue = "self";
+                modifier.FindPropertyRelative("stat").stringValue = seeds[index].Stat;
+                modifier.FindPropertyRelative("operation").enumValueIndex = (int)seeds[index].Operation;
+                modifier.FindPropertyRelative("value").floatValue = seeds[index].Value;
+                modifier.FindPropertyRelative("durationScope").enumValueIndex = (int)ModifierDurationScope.PlanningSnapshot;
+                modifier.FindPropertyRelative("durationSeconds").floatValue = 0;
+            }
+            serialized.ApplyModifiedProperties();
+            EditorUtility.SetDirty(unit);
         }
 
         private static void ConfigureShopOdds(GameBalanceConfigurationDefinition configuration)
@@ -325,6 +377,46 @@ namespace BlueprintCivilizations.Editor.ContentStudio
             public float Value { get; }
             public float Duration { get; }
             public ModifierDurationScope DurationScope { get; }
+        }
+
+        private readonly struct UnitSeed
+        {
+            public UnitSeed(int tier, int cost, float health, float damage, float attacksPerSecond, int maximumPopulation, string role)
+            {
+                Tier = tier;
+                Cost = cost;
+                Health = health;
+                Damage = damage;
+                AttacksPerSecond = attacksPerSecond;
+                MaximumPopulation = maximumPopulation;
+                Role = role;
+            }
+
+            public int Tier { get; }
+            public int Cost { get; }
+            public float Health { get; }
+            public float Damage { get; }
+            public float AttacksPerSecond { get; }
+            public int MaximumPopulation { get; }
+            public string Role { get; }
+        }
+
+        private readonly struct UpgradeSeed
+        {
+            public UpgradeSeed(string id, string displayName, string stat, ModifierOperation operation, float value)
+            {
+                Id = id;
+                DisplayName = displayName;
+                Stat = stat;
+                Operation = operation;
+                Value = value;
+            }
+
+            public string Id { get; }
+            public string DisplayName { get; }
+            public string Stat { get; }
+            public ModifierOperation Operation { get; }
+            public float Value { get; }
         }
     }
 }

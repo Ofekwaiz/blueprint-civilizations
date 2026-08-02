@@ -4,9 +4,12 @@
         <uie:Toolbar class="content-toolbar">
             <uie:ToolbarSearchField name="search" />
             <uie:ToolbarMenu name="type-menu" text="Units" />
+            <ui:DropdownField name="race-filter" value="All races" />
+            <ui:DropdownField name="tier-filter" value="All tiers" />
+            <ui:DropdownField name="status-filter" value="All states" />
             <ui:Button name="create-button" text="Create" />
             <ui:Button name="duplicate-button" text="Duplicate" />
-            <ui:Button name="disable-button" text="Disable" />
+            <ui:Button name="disable-button" text="Disable (Recommended)" tooltip="Disabling preserves IDs and save compatibility and is safer than deletion." />
             <ui:Button name="delete-button" text="Delete Permanently" />
             <ui:VisualElement class="toolbar-spacer" />
             <ui:Button name="catalog-button" text="Rebuild Catalog" />
@@ -16,6 +19,8 @@
             <ui:ListView name="content-list" selection-type="Single" virtualization-method="FixedHeight" />
             <ui:ScrollView name="details" />
         </ui:TwoPaneSplitView>
-        <ui:Label name="validation" text="Select content to see validation." class="validation-output" />
+        <ui:ScrollView name="validation" class="validation-output">
+            <ui:Label text="Select content to see validation." />
+        </ui:ScrollView>
     </ui:VisualElement>
 </ui:UXML>

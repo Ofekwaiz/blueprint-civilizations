@@ -6,6 +6,7 @@ This repository is the data-driven foundation for the game described in `Docs/De
 - Unity 6-compatible source layout.
 - ScriptableObject definitions for races, Nexus data, units, structures, research, artifacts, evolutions, abilities, philosophies, augments, and balance configuration.
 - Read-only runtime access to authored definition data.
+- Plain ID-based `UnitBlueprintState` proving runtime progression is separated from authored definitions.
 - Structured modifier, trigger, compatibility, targeting, movement, and production authoring data.
 - Stable-ID content catalog plus actionable validation and pre-build validation.
 - UXML/USS-based UI Toolkit Content Studio editor window.
@@ -14,7 +15,7 @@ This repository is the data-driven foundation for the game described in `Docs/De
 - Embedded Development Bible and implementation documentation.
 
 ## Important limitation
-Milestone 0 establishes authoring and validation contracts only. It does not implement blueprint runtime state, economy, shops, combat, match flow, runtime UI, saves, or networking. The complete Volume 16 prototype roster has not yet been converted to assets; the checked-in Hive set is the approved vertical-slice sample.
+Milestone 0 establishes authoring, validation, and runtime-state separation contracts only. It does not implement Blueprint Board behavior, economy, shops, combat, match flow, runtime UI, saves, or networking. The complete Volume 16 prototype roster has not yet been converted to assets; the checked-in Hive set is the approved vertical-slice sample.
 
 ## First run
 1. Install Unity Hub and a Unity 6 editor with Windows Build Support.

@@ -8,8 +8,8 @@ namespace BlueprintCivilizations.Content.Definitions
     {
         [SerializeField] private string uniqueResourceName = "";
         [SerializeField] private Color identityColor = Color.white;
-        [SerializeField] private NexusDefinition nexus;
-        [SerializeField] private UnitDefinition startingUnit;
+        [SerializeField] private NexusDefinition nexus = null;
+        [SerializeField] private UnitDefinition startingUnit = null;
         [SerializeField] private List<UnitDefinition> permittedUnits = new();
         [SerializeField] private List<StructureDefinition> permittedStructures = new();
         [SerializeField] private List<ResearchDefinition> permittedResearch = new();
