@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="blueprint-planning-layout" class="blueprint-planning-layout">
+        <ui:VisualElement name="blueprint-board-panel" class="blueprint-board-panel" focusable="true" tabindex="0">
+            <ui:VisualElement class="blueprint-board-header">
+                <ui:Label text="NEXUS BLUEPRINT BOARD" class="blueprint-board-title" />
+                <ui:Label name="blueprint-capacity-label" text="ACTIVE CAPACITY 0/0" class="blueprint-capacity-label" />
+                <ui:VisualElement class="blueprint-history-controls">
+                    <ui:Button name="blueprint-undo-button" text="Undo" tooltip="Undo last board action (Ctrl+Z)" />
+                    <ui:Button name="blueprint-redo-button" text="Redo" tooltip="Redo board action (Ctrl+Y)" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label text="ACTIVE LINE" class="blueprint-section-label" />
+            <ui:ScrollView name="blueprint-active-scroll" mode="Horizontal" horizontal-scroller-visibility="Auto" vertical-scroller-visibility="Hidden" class="blueprint-active-scroll">
+                <ui:VisualElement name="blueprint-active-row" class="blueprint-active-row" />
+            </ui:ScrollView>
+            <ui:Label text="BENCH" class="blueprint-section-label blueprint-section-label--bench" />
+            <ui:ScrollView name="blueprint-bench-scroll" mode="Horizontal" horizontal-scroller-visibility="Auto" vertical-scroller-visibility="Hidden" class="blueprint-bench-scroll">
+                <ui:VisualElement name="blueprint-bench-row" class="blueprint-bench-row" />
+            </ui:ScrollView>
+            <ui:Label name="blueprint-status-label" text="Drag, click, or use the keyboard to arrange Blueprints." class="blueprint-status" />
+            <ui:VisualElement name="blueprint-drag-layer" class="blueprint-drag-layer" picking-mode="Ignore" />
+        </ui:VisualElement>
+        <ui:VisualElement name="blueprint-details-host" class="blueprint-details-host" />
+    </ui:VisualElement>
+</ui:UXML>

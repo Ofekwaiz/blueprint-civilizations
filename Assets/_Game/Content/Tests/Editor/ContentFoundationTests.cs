@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using BlueprintCivilizations.Blueprints;
 using BlueprintCivilizations.Content.Catalogs;
 using BlueprintCivilizations.Content.Definitions;
 using BlueprintCivilizations.Content.Validation;
@@ -209,11 +210,12 @@ namespace BlueprintCivilizations.Tests
             {
                 CopiesPurchased = 7,
                 AscensionLevel = AscensionLevel.AscensionOne,
-                Location = BlueprintLocationState.Active,
-                BlueprintBoardIndex = 2,
                 AssignedLane = BlueprintLane.Left,
                 AssignedStance = BlueprintStance.Defense
             };
+            var board = new BlueprintBoardState("PLAYER_TEST", 3, new[] { state });
+            var placement = new BlueprintPlacementService(board);
+            Assert.That(placement.Execute(BlueprintCommands.ActivateBlueprint(unit.Id, 2)).Success, Is.True);
             state.ChosenEvolutionIds.Add("EVOLUTION_TEST");
             state.SelectedPerCopyStatUpgradeIds.Add("refinement.hp");
             state.AttachedResearchIds.Add("RESEARCH_TEST");

@@ -14,14 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: EVOLUTION_HIVE_SPIDER_VENOM
   displayName: Venom Spider
-  description: "Ascension I path that adds a poison damage-over-time identity."
+  description: Ascension I path that adds a poison damage-over-time identity.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic, Poison]
+  tags:
+  - Hive
+  - Organic
+  - Poison
   icon: {fileID: 0}
   requiredAscension: 1
   sourceBlueprintId: HIVE_SPIDER
-  grantedTags: [Poison]
+  grantedTags:
+  - Poison
   modifiers:
   - targetSelector: self
     stat: poisonPower

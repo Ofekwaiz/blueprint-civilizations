@@ -1,7 +1,7 @@
 {
   "name": "BlueprintCivilizations.Editor",
   "rootNamespace": "BlueprintCivilizations.Editor",
-  "references": ["BlueprintCivilizations.Core", "BlueprintCivilizations.Content"],
+  "references": ["BlueprintCivilizations.Core", "BlueprintCivilizations.Content", "BlueprintCivilizations.Blueprints", "BlueprintCivilizations.UI"],
   "includePlatforms": ["Editor"],
   "excludePlatforms": [],
   "allowUnsafeCode": false,

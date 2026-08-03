@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: NEXUS_HIVE_BROOD_QUEEN
   displayName: Brood Queen
-  description: "Hive Nexus and adaptation engine."
+  description: Hive Nexus and adaptation engine.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Nexus, Organic]
+  tags:
+  - Hive
+  - Nexus
+  - Organic
   icon: {fileID: 0}
   baseHealth: 1000
   baseArmor: 0

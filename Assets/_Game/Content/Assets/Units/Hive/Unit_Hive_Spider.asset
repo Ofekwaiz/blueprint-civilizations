@@ -14,15 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: HIVE_SPIDER
   displayName: Web Spider
-  description: "Ranged brood. Every third attack applies a 15% slow for 2 seconds."
+  description: Ranged brood. Every third attack applies a 15% slow for 2 seconds.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic, Ranged]
+  tags:
+  - Hive
+  - Organic
+  - Ranged
   icon: {fileID: 0}
   race: {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
   isNeutral: 0
   tier: 1
-  goldCost: 2
+  goldCost: 1
   poolKind: 0
   shopPoolSize: 18
   baseShopWeight: 1
@@ -30,14 +33,14 @@ MonoBehaviour:
   combatStats:
     maxHealth: 95
     attackDamage: 12
-    attackIntervalSeconds: 1.1764706
+    attackIntervalSeconds: 1.176471
     attackRange: 4
     movementSpeed: 2
     armor: 0
     resistance: 0
   productionStats:
     spawnInterval: 6
-    maximumPopulation: 4
+    maximumPopulation: 2
     initialSpawnDelay: 0
     spawnBatchSize: 1
     spawnPriority: 0
@@ -53,24 +56,67 @@ MonoBehaviour:
   - id: refinement.hp
     displayName: Reinforced Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: maxHealth, operation: 1, value: 8, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
+    modifier:
+      targetSelector: self
+      stat: maxHealth
+      operation: 1
+      value: 8
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
   - id: refinement.damage
     displayName: Sharpened Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: attackDamage, operation: 1, value: 8, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
+    modifier:
+      targetSelector: self
+      stat: attackDamage
+      operation: 1
+      value: 8
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
   - id: refinement.spawn
     displayName: Accelerated Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: spawnInterval, operation: 2, value: -6, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
+    modifier:
+      targetSelector: self
+      stat: spawnInterval
+      operation: 2
+      value: -6
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
   - id: refinement.population
     displayName: Expanded Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: maximumPopulation, operation: 0, value: 1, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
+    modifier:
+      targetSelector: self
+      stat: maximumPopulation
+      operation: 0
+      value: 1
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
   - id: refinement.movement
     displayName: Mobile Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: movementSpeed, operation: 1, value: 5, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
-  socketMilestones: {firstSocketCopies: 1, secondSocketCopies: 4, thirdSocketCopies: 9}
+    modifier:
+      targetSelector: self
+      stat: movementSpeed
+      operation: 1
+      value: 5
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
+  socketMilestones:
+    firstSocketCopies: 1
+    secondSocketCopies: 4
+    thirdSocketCopies: 9
   ascensionOneThreshold: 5
   ascensionTwoThreshold: 10
   ascensionOneOptions:

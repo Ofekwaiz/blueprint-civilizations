@@ -1,0 +1,14 @@
+{
+  "name": "BlueprintCivilizations.Blueprints",
+  "rootNamespace": "BlueprintCivilizations.Blueprints",
+  "references": ["BlueprintCivilizations.Core", "BlueprintCivilizations.Content"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

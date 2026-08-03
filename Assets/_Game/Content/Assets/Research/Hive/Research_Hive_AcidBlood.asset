@@ -14,23 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: HIVE_RES_01
   displayName: Acid Blood
-  description: "On death, deal 8% maximum-HP magic damage nearby, capped against bosses."
+  description: On death, deal 8% maximum-HP magic damage nearby, capped against bosses.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic, DeathTrigger]
+  tags:
+  - Hive
+  - Organic
+  - DeathTrigger
   icon: {fileID: 0}
   affinityRace: {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
   rarity: 3
   compatibility:
     allowedRaces:
     - {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
-    requiredTags: [Organic]
+    requiredTags:
+    - Organic
     excludedTags: []
     allowNeutral: 0
   modifiers: []
   triggers:
   - eventType: 1
-    requiredTags: [Organic]
+    requiredTags:
+    - Organic
     probability: 1
     everyNthEvent: 1
     cooldownSeconds: 0

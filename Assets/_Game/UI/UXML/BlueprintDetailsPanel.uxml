@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <ui:VisualElement name="blueprint-details-panel" class="blueprint-details-panel">
+        <ui:Label text="BLUEPRINT DETAILS" class="blueprint-details-title" />
+        <ui:VisualElement name="blueprint-details-empty" class="blueprint-details-empty">
+            <ui:Label name="blueprint-details-empty-message" text="Select a Blueprint to inspect its production and combat profile." class="blueprint-details-empty-message" />
+        </ui:VisualElement>
+        <ui:VisualElement name="blueprint-details-content" class="blueprint-details-content blueprint-details--hidden">
+            <ui:VisualElement class="blueprint-details-identity-header">
+                <ui:VisualElement class="blueprint-details-icon-frame">
+                    <ui:Image name="blueprint-details-icon" class="blueprint-details-icon blueprint-details--hidden" />
+                    <ui:Label name="blueprint-details-icon-fallback" text="NO ICON" class="blueprint-details-icon-fallback" />
+                </ui:VisualElement>
+                <ui:VisualElement class="blueprint-details-heading-copy">
+                    <ui:Label name="blueprint-details-name" class="blueprint-details-name" />
+                    <ui:Label name="blueprint-details-developer-id" class="blueprint-details-developer-id" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:Label name="blueprint-details-diagnostic" class="blueprint-details-diagnostic blueprint-details--hidden" />
+            <ui:ScrollView name="blueprint-details-scroll" mode="Vertical" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Auto" class="blueprint-details-scroll">
+                <ui:VisualElement name="blueprint-details-sections" class="blueprint-details-sections" />
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

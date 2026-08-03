@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: ABILITY_HIVE_LARVA_BIOMASS_MOTE
   displayName: Biomass Mote
-  description: "On death, has a 20% chance to leave a Biomass Mote worth 0.25 Biomass."
+  description: On death, has a 20% chance to leave a Biomass Mote worth 0.25 Biomass.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic, DeathTrigger]
+  tags:
+  - Hive
+  - Organic
+  - DeathTrigger
   icon: {fileID: 0}
   modifiers: []
   triggers:
@@ -34,6 +37,6 @@ MonoBehaviour:
       value: 0.25
       conditionTags: []
       sourcePriority: 0
-      durationScope: 0
+      durationScope: 1
       durationSeconds: 0
-  presentationSummary: "Death may create a Biomass Mote."
+  presentationSummary: Death may create a Biomass Mote.

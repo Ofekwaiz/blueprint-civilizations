@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="12" result="Failed(Child)" total="12" passed="0" failed="12" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="0001-01-01 00:00:00Z" end-time="0001-01-01 00:00:00Z" duration="0.2808439">
+  <test-suite type="TestSuite" id="1000" name="BlueprintCivilizations_Unity_M0" fullname="BlueprintCivilizations_Unity_M0" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.280844" total="12" passed="0" failed="12" inconclusive="0" skipped="0" asserts="0">One or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsSetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="platform" value="PlayMode"></property></properties><failure>One or more child tests had errors<message>One or more child tests had errors</message></failure><test-suite type="Assembly" id="1014" name="BlueprintCivilizations.UI.PlayModeTests.dll" fullname="E:/BlueprintCivilizations_Unity_M0/BlueprintCivilizations_Unity_M0/Temp/UnityTempFile-c830e86d0f4caaa4d9f30b363603829d/PlayerWithTests/PlayerWithTests_Data/Managed/BlueprintCivilizations.UI.PlayModeTests.dll" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.241483" total="12" passed="0" failed="12" inconclusive="0" skipped="0" asserts="0">One or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsSetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_PID" value="26024"></property><property name="_APPDOMAIN" value="Unity Root Domain"></property><property name="platform" value="PlayMode"></property><property name="EditorOnly" value="False"></property></properties><failure>One or more child tests had errors<message>One or more child tests had errors</message></failure><test-suite type="TestSuite" id="1015" name="BlueprintCivilizations" fullname="BlueprintCivilizations" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.237645" total="12" passed="0" failed="12" inconclusive="0" skipped="0" asserts="0">One or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsSetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties></properties><failure>One or more child tests had errors<message>One or more child tests had errors</message></failure><test-suite type="TestSuite" id="1016" name="UI" fullname="BlueprintCivilizations.UI" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.234448" total="12" passed="0" failed="12" inconclusive="0" skipped="0" asserts="0">One or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsSetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties></properties><failure>One or more child tests had errors<message>One or more child tests had errors</message></failure><test-suite type="TestSuite" id="1017" name="Tests" fullname="BlueprintCivilizations.UI.Tests" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.229576" total="12" passed="0" failed="12" inconclusive="0" skipped="0" asserts="0">One or more child tests had errorsOne or more child tests had errorsOne or more child tests had errorsSetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties></properties><failure>One or more child tests had errors<message>One or more child tests had errors</message></failure><test-suite type="TestSuite" id="1018" name="PlayMode" fullname="BlueprintCivilizations.UI.Tests.PlayMode" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.213037" total="12" passed="0" failed="12" inconclusive="0" skipped="0" asserts="0">One or more child tests had errorsOne or more child tests had errorsSetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties></properties><failure>One or more child tests had errors<message>One or more child tests had errors</message></failure><test-suite type="TestFixture" id="1001" name="BlueprintBoardPlayModeTests" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.209003" total="12" passed="0" failed="12" inconclusive="0" skipped="0" asserts="0">One or more child tests had errorsSetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties></properties><failure>One or more child tests had errors<message>One or more child tests had errors</message></failure><test-case id="1009" name="ActiveInsertionDragReordersBlueprints" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ActiveInsertionDragReordersBlueprints" methodname="ActiveInsertionDragReordersBlueprints" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1658808167" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.064869" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1006" name="ActiveToBenchDragBenchesBlueprint" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ActiveToBenchDragBenchesBlueprint" methodname="ActiveToBenchDragBenchesBlueprint" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="2109787027" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.006966" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1008" name="ActiveToEmptySlotDragMovesBlueprintAndPreservesSelection" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ActiveToEmptySlotDragMovesBlueprintAndPreservesSelection" methodname="ActiveToEmptySlotDragMovesBlueprintAndPreservesSelection" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1721797427" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.013177" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1007" name="ActiveToOccupiedActiveSlotDragSwapsBlueprints" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ActiveToOccupiedActiveSlotDragSwapsBlueprints" methodname="ActiveToOccupiedActiveSlotDragSwapsBlueprints" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="850535184" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.011695" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1004" name="BenchToEmptyActiveSlotDragActivatesBlueprint" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.BenchToEmptyActiveSlotDragActivatesBlueprint" methodname="BenchToEmptyActiveSlotDragActivatesBlueprint" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1286419616" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.014210" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1005" name="BenchToOccupiedActiveSlotDragUsesDocumentedInsertion" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.BenchToOccupiedActiveSlotDragUsesDocumentedInsertion" methodname="BenchToOccupiedActiveSlotDragUsesDocumentedInsertion" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1102434493" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.007089" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1003" name="ClickingFirstThenSecondCardTransfersSelection" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ClickingFirstThenSecondCardTransfersSelection" methodname="ClickingFirstThenSecondCardTransfersSelection" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="414976856" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.015455" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1013" name="DisableEnableDoesNotAccumulateCallbacksAndRestoresPersistedBoard" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.DisableEnableDoesNotAccumulateCallbacksAndRestoresPersistedBoard" methodname="DisableEnableDoesNotAccumulateCallbacksAndRestoresPersistedBoard" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="2131237959" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.006313" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1010" name="DragThresholdShowsGhostSourceAndValidTargetPreviewBeforeRelease" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.DragThresholdShowsGhostSourceAndValidTargetPreviewBeforeRelease" methodname="DragThresholdShowsGhostSourceAndValidTargetPreviewBeforeRelease" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="2058331689" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.013089" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1002" name="HoveringOneActiveCardAppliesHoverClassOnlyToThatCard" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.HoveringOneActiveCardAppliesHoverClassOnlyToThatCard" methodname="HoveringOneActiveCardAppliesHoverClassOnlyToThatCard" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1229835333" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.005136" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1012" name="InvalidDropLeavesStateUnchangedAndReleasesPointerCapture" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.InvalidDropLeavesStateUnchangedAndReleasesPointerCapture" methodname="InvalidDropLeavesStateUnchangedAndReleasesPointerCapture" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1538245219" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.013302" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case><test-case id="1011" name="InvalidInsertionPreviewIsDistinctAndDropDoesNotMutateState" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.InvalidInsertionPreviewIsDistinctAndDropDoesNotMutateState" methodname="InvalidInsertionPreviewIsDistinctAndDropDoesNotMutateState" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="45540521" result="Failed" start-time="2026-08-03 08:56:13Z" end-time="2026-08-03 08:56:13Z" duration="0.018675" asserts="0">SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<properties><property name="_JOINTYPE" value="UnityCombinatorial"></property><property name="retryIteration" value="0"></property><property name="repeatIteration" value="0"></property></properties><failure>SetUp :   Expected: not null
+  But was:  null
+at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+<message>SetUp :   Expected: not null
+  But was:  null
+</message><stack-trace>at BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests+&lt;SetUp&gt;d__11.MoveNext () [0x000c7] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\UI\Tests\PlayMode\BlueprintBoardPlayModeTests.cs:53
+at UnityEngine.TestTools.EnumeratorHelper+&lt;ProgressOnEnumerator&gt;d__5.MoveNext () [0x00029] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs:35
+at UnityEngine.TestTools.BeforeAfterTestCommandBase`1+&lt;ExecuteEnumerable&gt;d__14[T].MoveNext () [0x00180] in .\Library\PackageCache\com.unity.test-framework\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs:130
+</stack-trace></failure></test-case></test-suite></test-suite></test-suite></test-suite></test-suite></test-suite></test-suite>
+</test-run>

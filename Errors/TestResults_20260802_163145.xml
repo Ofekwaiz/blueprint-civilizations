@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="48" result="Failed(Child)" total="48" passed="47" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:25Z" duration="0.8271173">
+  <test-suite type="TestSuite" id="1059" name="BlueprintCivilizations_Unity_M0" fullname="BlueprintCivilizations_Unity_M0" runstate="Runnable" testcasecount="48" result="Failed" site="Child" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:25Z" duration="0.827117" total="48" passed="47" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="EditMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1030" name="BlueprintCivilizations.Blueprints.Tests.dll" fullname="E:/BlueprintCivilizations_Unity_M0/BlueprintCivilizations_Unity_M0/Library/ScriptAssemblies/BlueprintCivilizations.Blueprints.Tests.dll" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.333840" total="28" passed="27" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="18384" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1031" name="BlueprintCivilizations" fullname="BlueprintCivilizations" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.333375" total="28" passed="27" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1032" name="Blueprints" fullname="BlueprintCivilizations.Blueprints" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.333187" total="28" passed="27" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1033" name="Tests" fullname="BlueprintCivilizations.Blueprints.Tests" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.333008" total="28" passed="27" failed="1" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestFixture" id="1001" name="BlueprintBoardTests" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" testcasecount="28" result="Failed" site="Child" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.331506" total="28" passed="27" failed="1" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-case id="1002" name="ActivateBlueprint_WhenCapacityExists_MovesFromBenchToRequestedSlot" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.ActivateBlueprint_WhenCapacityExists_MovesFromBenchToRequestedSlot" methodname="ActivateBlueprint_WhenCapacityExists_MovesFromBenchToRequestedSlot" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="198934216" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.028189" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1003" name="ActivateBlueprint_WhenCapacityIsFull_ReturnsFailureWithoutMutation" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.ActivateBlueprint_WhenCapacityIsFull_ReturnsFailureWithoutMutation" methodname="ActivateBlueprint_WhenCapacityIsFull_ReturnsFailureWithoutMutation" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1762217887" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000852" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1004" name="ActivateBlueprint_WhenInsertionSlotIsOccupied_ShiftsTowardNearestEmptySlot" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.ActivateBlueprint_WhenInsertionSlotIsOccupied_ShiftsTowardNearestEmptySlot" methodname="ActivateBlueprint_WhenInsertionSlotIsOccupied_ShiftsTowardNearestEmptySlot" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="720846707" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.001194" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1013" name="Adjacency_MatchingTagsRaceAndTier_UsesInjectedDefinitionMetadata" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Adjacency_MatchingTagsRaceAndTier_UsesInjectedDefinitionMetadata" methodname="Adjacency_MatchingTagsRaceAndTier_UsesInjectedDefinitionMetadata" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="300033453" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.004389" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1012" name="Adjacency_QueriesImmediateAndDirectionalRelationships_InSlotOrder" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Adjacency_QueriesImmediateAndDirectionalRelationships_InSlotOrder" methodname="Adjacency_QueriesImmediateAndDirectionalRelationships_InSlotOrder" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1213722137" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.001610" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1005" name="BenchBlueprint_WhenActive_DeactivatesAndAppendsToBench" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.BenchBlueprint_WhenActive_DeactivatesAndAppendsToBench" methodname="BenchBlueprint_WhenActive_DeactivatesAndAppendsToBench" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="449848743" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.001052" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1026" name="BlueprintBoardAssets_LoadAndViewRendersHorizontalCapacitySlots" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.BlueprintBoardAssets_LoadAndViewRendersHorizontalCapacitySlots" methodname="BlueprintBoardAssets_LoadAndViewRendersHorizontalCapacitySlots" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1827883425" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.034168" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1027" name="BlueprintBoardPanelFactory_WithProjectAssets_ConstructsRuntimePanel" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.BlueprintBoardPanelFactory_WithProjectAssets_ConstructsRuntimePanel" methodname="BlueprintBoardPanelFactory_WithProjectAssets_ConstructsRuntimePanel" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1338747850" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.009177" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1028" name="BlueprintBoardSandboxInitialState_HasTwoActiveAndTwoBenchedBlueprints" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.BlueprintBoardSandboxInitialState_HasTwoActiveAndTwoBenchedBlueprints" methodname="BlueprintBoardSandboxInitialState_HasTwoActiveAndTwoBenchedBlueprints" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1407945952" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000531" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1029" name="BlueprintBoardSandboxSceneComposition_WhenRunTwice_DoesNotDuplicateBootstrapOrDocument" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.BlueprintBoardSandboxSceneComposition_WhenRunTwice_DoesNotDuplicateBootstrapOrDocument" methodname="BlueprintBoardSandboxSceneComposition_WhenRunTwice_DoesNotDuplicateBootstrapOrDocument" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1197037301" result="Failed" label="Error" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.216527" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+                <failure>
+                  <message><![CDATA[System.InvalidOperationException : This can only be used during play mode, please use EditorSceneManager.NewScene() instead.]]></message>
+                  <stack-trace><![CDATA[  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <9003796c57374fd89cb8aecf8cdea52c>:0 
+  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName) [0x00009] in <9003796c57374fd89cb8aecf8cdea52c>:0 
+  at BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.BlueprintBoardSandboxSceneComposition_WhenRunTwice_DoesNotDuplicateBootstrapOrDocument () [0x00027] in E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Assets\_Game\Blueprints\Tests\Editor\BlueprintBoardTests.cs:393 
+  at (wrapper managed-to-native) System.Reflection.RuntimeMethodInfo.InternalInvoke(System.Reflection.RuntimeMethodInfo,object,object[],System.Exception&)
+  at System.Reflection.RuntimeMethodInfo.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0006a] in <901293c591874400b128ee88bd0b2657>:0 ]]></stack-trace>
+                </failure>
+              </test-case>
+              <test-case id="1011" name="Capacity_WhenExpandedAddsSlots_AndUnsafeShrinkIsRejected" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Capacity_WhenExpandedAddsSlots_AndUnsafeShrinkIsRejected" methodname="Capacity_WhenExpandedAddsSlots_AndUnsafeShrinkIsRejected" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="697458500" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.001108" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1007" name="MoveBlueprint_WhenBlueprintIsMissing_ReturnsFailureWithoutMutation" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.MoveBlueprint_WhenBlueprintIsMissing_ReturnsFailureWithoutMutation" methodname="MoveBlueprint_WhenBlueprintIsMissing_ReturnsFailureWithoutMutation" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="630329897" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000725" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1006" name="MoveBlueprint_WhenTargetIsEmpty_MovesWithoutChangingOrderOfOthers" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.MoveBlueprint_WhenTargetIsEmpty_MovesWithoutChangingOrderOfOthers" methodname="MoveBlueprint_WhenTargetIsEmpty_MovesWithoutChangingOrderOfOthers" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="450735406" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000336" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1023" name="Persistence_AutoSaveBindingPersistsSuccessfulCommandsAndUndo" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Persistence_AutoSaveBindingPersistsSuccessfulCommandsAndUndo" methodname="Persistence_AutoSaveBindingPersistsSuccessfulCommandsAndUndo" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="314937633" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.002390" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1022" name="Persistence_SaveThenLoad_UsesStableSerializedState" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Persistence_SaveThenLoad_UsesStableSerializedState" methodname="Persistence_SaveThenLoad_UsesStableSerializedState" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1409385270" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000460" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1010" name="ReorderBlueprints_WhenMovedAcrossLine_ShiftsInterveningSlotsDeterministically" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.ReorderBlueprints_WhenMovedAcrossLine_ShiftsInterveningSlotsDeterministically" methodname="ReorderBlueprints_WhenMovedAcrossLine_ShiftsInterveningSlotsDeterministically" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1342671503" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000973" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1025" name="RuntimeAssemblies_DoNotReferenceUnityEditor" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.RuntimeAssemblies_DoNotReferenceUnityEditor" methodname="RuntimeAssemblies_DoNotReferenceUnityEditor" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1589167147" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000362" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1021" name="Serialization_RoundTripPreservesOrderingAndProducesStableJson" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Serialization_RoundTripPreservesOrderingAndProducesStableJson" methodname="Serialization_RoundTripPreservesOrderingAndProducesStableJson" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="329373352" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000604" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1008" name="SwapBlueprints_WhenBothSlotsOccupied_SwapsAtomically" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.SwapBlueprints_WhenBothSlotsOccupied_SwapsAtomically" methodname="SwapBlueprints_WhenBothSlotsOccupied_SwapsAtomically" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="578024698" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000715" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1009" name="SwapBlueprints_WhenOneSlotIsEmpty_ReturnsStructuredInvalidSwap" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.SwapBlueprints_WhenOneSlotIsEmpty_ReturnsStructuredInvalidSwap" methodname="SwapBlueprints_WhenOneSlotIsEmpty_ReturnsStructuredInvalidSwap" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="368837118" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000286" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1024" name="UndoRedo_RestoresSnapshotsAndKeepsRevisionMonotonic" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.UndoRedo_RestoresSnapshotsAndKeepsRevisionMonotonic" methodname="UndoRedo_RestoresSnapshotsAndKeepsRevisionMonotonic" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="350453811" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.003046" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1016" name="Validation_WhenOccupiedCountEqualsCapacity_DoesNotReportOverflow" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Validation_WhenOccupiedCountEqualsCapacity_DoesNotReportOverflow" methodname="Validation_WhenOccupiedCountEqualsCapacity_DoesNotReportOverflow" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="725435076" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.001757" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1017" name="Validation_WhenOccupiedCountExceedsCapacity_ReportsOverflow" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Validation_WhenOccupiedCountExceedsCapacity_ReportsOverflow" methodname="Validation_WhenOccupiedCountExceedsCapacity_ReportsOverflow" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1275068402" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000701" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1015" name="Validation_WhenOccupiedCountIsBelowCapacity_DoesNotReportOverflow" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Validation_WhenOccupiedCountIsBelowCapacity_DoesNotReportOverflow" methodname="Validation_WhenOccupiedCountIsBelowCapacity_DoesNotReportOverflow" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="1209233579" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000248" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1019" name="Validation_WhenOverflowAndSlotMismatchCoexist_ReportsBothDistinctIssues" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Validation_WhenOverflowAndSlotMismatchCoexist_ReportsBothDistinctIssues" methodname="Validation_WhenOverflowAndSlotMismatchCoexist_ReportsBothDistinctIssues" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="793809015" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000464" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1020" name="Validation_WhenPlacementReferencesUnknownBlueprint_ReportsBrokenReference" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Validation_WhenPlacementReferencesUnknownBlueprint_ReportsBrokenReference" methodname="Validation_WhenPlacementReferencesUnknownBlueprint_ReportsBrokenReference" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="2108101455" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000501" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1018" name="Validation_WhenSlotListLengthMismatchesWithoutOccupiedOverflow_ReportsOnlyMismatch" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Validation_WhenSlotListLengthMismatchesWithoutOccupiedOverflow_ReportsOnlyMismatch" methodname="Validation_WhenSlotListLengthMismatchesWithoutOccupiedOverflow_ReportsOnlyMismatch" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="601605982" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.000329" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+              <test-case id="1014" name="Validation_WhenStateIsCorrupted_ReturnsStructuredIssues" fullname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests.Validation_WhenStateIsCorrupted_ReturnsStructuredIssues" methodname="Validation_WhenStateIsCorrupted_ReturnsStructuredIssues" classname="BlueprintCivilizations.Blueprints.Tests.BlueprintBoardTests" runstate="Runnable" seed="412710364" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:24Z" duration="0.001608" asserts="0">
+                <properties>
+                  <property name="retryIteration" value="0" />
+                  <property name="repeatIteration" value="0" />
+                </properties>
+              </test-case>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1055" name="BlueprintCivilizations.Tests.dll" fullname="E:/BlueprintCivilizations_Unity_M0/BlueprintCivilizations_Unity_M0/Library/ScriptAssemblies/BlueprintCivilizations.Tests.dll" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:25Z" duration="0.484985" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="18384" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="EditMode" />
+        <property name="EditorOnly" value="True" />
+      </properties>
+      <test-suite type="TestSuite" id="1056" name="BlueprintCivilizations" fullname="BlueprintCivilizations" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:25Z" duration="0.467391" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1057" name="Tests" fullname="BlueprintCivilizations.Tests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:25Z" duration="0.467170" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestFixture" id="1034" name="ContentFoundationTests" fullname="BlueprintCivilizations.Tests.ContentFoundationTests" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" testcasecount="20" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:25Z" duration="0.466782" total="20" passed="20" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1052" name="CanonicalSampleContent_WhenValidated_HasNoBlockingIssues" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.CanonicalSampleContent_WhenValidated_HasNoBlockingIssues" methodname="CanonicalSampleContent_WhenValidated_HasNoBlockingIssues" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1534403006" result="Passed" start-time="2026-08-02 13:31:24Z" end-time="2026-08-02 13:31:25Z" duration="0.005764" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1054" name="ContentStudioAssets_WhenLoaded_UseUxmlAndUss" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.ContentStudioAssets_WhenLoaded_UseUxmlAndUss" methodname="ContentStudioAssets_WhenLoaded_UseUxmlAndUss" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="2095760523" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.002969" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1051" name="CreateSamples_WhenRunTwice_DoesNotCreateDuplicateCanonicalIds" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.CreateSamples_WhenRunTwice_DoesNotCreateDuplicateCanonicalIds" methodname="CreateSamples_WhenRunTwice_DoesNotCreateDuplicateCanonicalIds" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="872938047" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.431891" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+              <output><![CDATA[Rebuilt catalog with 13 definitions.
+Canonical Milestone 0 prototype content created or repaired.
+Rebuilt catalog with 13 definitions.
+Canonical Milestone 0 prototype content created or repaired.
+]]></output>
+            </test-case>
+            <test-case id="1053" name="DefaultCatalog_WhenLoaded_ContainsEveryAuthoredDefinition" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.DefaultCatalog_WhenLoaded_ContainsEveryAuthoredDefinition" methodname="DefaultCatalog_WhenLoaded_ContainsEveryAuthoredDefinition" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="87501308" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.001688" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1043" name="EditorInitialize_WhenIdWasAlreadyAssigned_LeavesStableIdUnchanged" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.EditorInitialize_WhenIdWasAlreadyAssigned_LeavesStableIdUnchanged" methodname="EditorInitialize_WhenIdWasAlreadyAssigned_LeavesStableIdUnchanged" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1473266286" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.002186" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1042" name="EditorSetDefinitions_WhenInputOrderVaries_StoresDeterministicIdOrder" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.EditorSetDefinitions_WhenInputOrderVaries_StoresDeterministicIdOrder" methodname="EditorSetDefinitions_WhenInputOrderVaries_StoresDeterministicIdOrder" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="2057415383" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.001067" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1041" name="GetByTags_WhenAllTagsAreRequired_ReturnsMatchingDefinitions" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.GetByTags_WhenAllTagsAreRequired_ReturnsMatchingDefinitions" methodname="GetByTags_WhenAllTagsAreRequired_ReturnsMatchingDefinitions" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="2115108261" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.003184" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1039" name="GetUnits_WhenRaceIsSpecified_ReturnsOnlyThatRace" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.GetUnits_WhenRaceIsSpecified_ReturnsOnlyThatRace" methodname="GetUnits_WhenRaceIsSpecified_ReturnsOnlyThatRace" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1563409635" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.001179" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1040" name="GetUnits_WhenTierIsSpecified_ReturnsOnlyThatTier" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.GetUnits_WhenTierIsSpecified_ReturnsOnlyThatTier" methodname="GetUnits_WhenTierIsSpecified_ReturnsOnlyThatTier" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="2073829640" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.001074" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1049" name="ModifyRuntimeState_WhenAssociatedDefinitionExists_DoesNotMutateAuthoredDefinition" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.ModifyRuntimeState_WhenAssociatedDefinitionExists_DoesNotMutateAuthoredDefinition" methodname="ModifyRuntimeState_WhenAssociatedDefinitionExists_DoesNotMutateAuthoredDefinition" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1151894666" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.002080" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1035" name="RebuildIndex_WhenIdsCollide_RejectsDuplicateIds" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.RebuildIndex_WhenIdsCollide_RejectsDuplicateIds" methodname="RebuildIndex_WhenIdsCollide_RejectsDuplicateIds" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1888092992" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.000572" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1050" name="RuntimeDefinitionSurface_WhenInspected_HasNoPublicStatMutationPath" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.RuntimeDefinitionSurface_WhenInspected_HasNoPublicStatMutationPath" methodname="RuntimeDefinitionSurface_WhenInspected_HasNoPublicStatMutationPath" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1412085947" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.000389" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1038" name="RuntimeQueries_WhenContentIsDisabled_ExcludeItUnlessExplicitlyIncluded" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.RuntimeQueries_WhenContentIsDisabled_ExcludeItUnlessExplicitlyIncluded" methodname="RuntimeQueries_WhenContentIsDisabled_ExcludeItUnlessExplicitlyIncluded" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1347928836" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.000898" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1037" name="TryGet_WhenIdIsMissing_ReturnsActionableError" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.TryGet_WhenIdIsMissing_ReturnsActionableError" methodname="TryGet_WhenIdIsMissing_ReturnsActionableError" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1777320595" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.000932" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1036" name="TryGet_WhenStableIdExists_ResolvesWithoutUsingDisplayName" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.TryGet_WhenStableIdExists_ResolvesWithoutUsingDisplayName" methodname="TryGet_WhenStableIdExists_ResolvesWithoutUsingDisplayName" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1260856013" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.000630" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1046" name="Validate_WhenAscensionThresholdsAreNotOrdered_ReportsProgressionField" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.Validate_WhenAscensionThresholdsAreNotOrdered_ReportsProgressionField" methodname="Validate_WhenAscensionThresholdsAreNotOrdered_ReportsProgressionField" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="181186261" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.001306" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1048" name="Validate_WhenEvolutionIsReferencedTwice_ReportsDuplicateReference" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.Validate_WhenEvolutionIsReferencedTwice_ReportsDuplicateReference" methodname="Validate_WhenEvolutionIsReferencedTwice_ReportsDuplicateReference" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="298233191" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.001186" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1047" name="Validate_WhenEvolutionListContainsMissingReference_ReportsExactList" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.Validate_WhenEvolutionListContainsMissingReference_ReportsExactList" methodname="Validate_WhenEvolutionListContainsMissingReference_ReportsExactList" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1924817405" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.001064" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1045" name="Validate_WhenUnitFieldsAreInvalid_ReportsExactFields" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.Validate_WhenUnitFieldsAreInvalid_ReportsExactFields" methodname="Validate_WhenUnitFieldsAreInvalid_ReportsExactFields" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1821268932" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.002535" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+            <test-case id="1044" name="Validate_WhenUnitIsValid_ReturnsNoBlockingIssues" fullname="BlueprintCivilizations.Tests.ContentFoundationTests.Validate_WhenUnitIsValid_ReturnsNoBlockingIssues" methodname="Validate_WhenUnitIsValid_ReturnsNoBlockingIssues" classname="BlueprintCivilizations.Tests.ContentFoundationTests" runstate="Runnable" seed="1497558738" result="Passed" start-time="2026-08-02 13:31:25Z" end-time="2026-08-02 13:31:25Z" duration="0.001050" asserts="0">
+              <properties>
+                <property name="retryIteration" value="0" />
+                <property name="repeatIteration" value="0" />
+              </properties>
+            </test-case>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

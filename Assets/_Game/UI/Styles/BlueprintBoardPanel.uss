@@ -1,0 +1,293 @@
+:root {
+    --board-bg: rgb(20, 27, 37);
+    --board-panel: rgb(31, 42, 56);
+    --board-slot: rgb(38, 51, 68);
+    --board-slot-empty: rgba(90, 111, 132, 0.18);
+    --board-border: rgb(81, 104, 128);
+    --board-text: rgb(235, 241, 246);
+    --board-muted: rgb(159, 178, 194);
+    --board-accent: rgb(90, 211, 174);
+    --board-warning: rgb(255, 188, 77);
+    --board-error: rgb(255, 112, 112);
+}
+
+.blueprint-planning-layout {
+    flex-grow: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 6px;
+    background-color: rgb(14, 20, 28);
+}
+
+.blueprint-board-panel {
+    position: relative;
+    flex-grow: 3;
+    flex-basis: 680px;
+    min-width: 340px;
+    min-height: 330px;
+    margin: 6px;
+    padding: 16px;
+    background-color: var(--board-bg);
+    color: var(--board-text);
+    border-width: 1px;
+    border-color: var(--board-border);
+    border-radius: 8px;
+}
+
+.blueprint-details-host {
+    flex-grow: 1;
+    flex-basis: 320px;
+    min-width: 300px;
+    min-height: 330px;
+    margin: 6px;
+}
+
+.blueprint-board-header {
+    min-height: 36px;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.blueprint-board-title {
+    flex-grow: 1;
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: var(--board-text);
+}
+
+.blueprint-capacity-label {
+    margin-right: 12px;
+    color: var(--board-accent);
+    -unity-font-style: bold;
+}
+
+.blueprint-history-controls {
+    flex-direction: row;
+}
+
+.blueprint-history-controls Button {
+    min-width: 62px;
+    margin-left: 4px;
+    color: var(--board-text);
+    background-color: var(--board-panel);
+    border-color: var(--board-border);
+}
+
+.blueprint-section-label {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: var(--board-muted);
+    font-size: 11px;
+    -unity-font-style: bold;
+}
+
+.blueprint-section-label--bench {
+    margin-top: 12px;
+}
+
+.blueprint-active-scroll,
+.blueprint-bench-scroll {
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.blueprint-active-scroll {
+    min-height: 142px;
+}
+
+.blueprint-bench-scroll {
+    min-height: 114px;
+}
+
+.blueprint-active-row,
+.blueprint-bench-drop {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    min-width: 100%;
+}
+
+.blueprint-bench-row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: 100%;
+    min-height: 92px;
+}
+
+.blueprint-bench-drop {
+    padding: 6px;
+    background-color: rgba(31, 42, 56, 0.75);
+    border-width: 1px;
+    border-color: var(--board-border);
+    border-radius: 6px;
+}
+
+#blueprint-bench-empty {
+    align-self: center;
+    margin-left: 12px;
+    color: var(--board-muted);
+    -unity-font-style: italic;
+}
+
+.blueprint-slot {
+    width: 126px;
+    min-width: 104px;
+    height: 126px;
+    margin: 0 2px;
+    padding: 5px;
+    justify-content: center;
+    align-items: stretch;
+    background-color: var(--board-slot);
+    border-width: 2px;
+    border-color: var(--board-border);
+    border-radius: 7px;
+}
+
+.blueprint-slot--empty {
+    background-color: var(--board-slot-empty);
+}
+
+#blueprint-empty-slot-label {
+    color: var(--board-muted);
+    -unity-text-align: middle-center;
+    font-size: 11px;
+}
+
+.blueprint-card {
+    width: 112px;
+    min-width: 94px;
+    min-height: 82px;
+    margin: 2px;
+    padding: 7px;
+    justify-content: center;
+    background-color: var(--board-panel);
+    border-width: 2px;
+    border-color: transparent;
+    border-radius: 6px;
+}
+
+.blueprint-bench-drop > .blueprint-card {
+    height: 78px;
+    margin-right: 7px;
+}
+
+#blueprint-card-icon {
+    height: 42px;
+    margin-bottom: 4px;
+}
+
+#blueprint-card-name {
+    color: var(--board-text);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+#blueprint-card-id {
+    margin-top: 3px;
+    color: var(--board-muted);
+    font-size: 8px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.blueprint-card:focus {
+    border-color: rgb(116, 158, 204);
+}
+
+.blueprint-card--adjacent {
+    border-color: rgb(178, 139, 235);
+    background-color: rgb(54, 45, 68);
+}
+
+.blueprint-card--selected {
+    border-color: var(--board-accent);
+    background-color: rgb(39, 70, 73);
+}
+
+.blueprint-card--hovered {
+    border-color: var(--board-warning);
+    translate: 0 -2px;
+}
+
+.blueprint-card--dragging {
+    opacity: 0.45;
+}
+
+.blueprint-insertion {
+    width: 10px;
+    min-width: 10px;
+    height: 126px;
+    border-radius: 5px;
+}
+
+.blueprint-insertion--preview {
+    background-color: var(--board-accent);
+}
+
+.blueprint-slot--swap-preview,
+.blueprint-bench-drop.blueprint-slot--swap-preview {
+    border-color: var(--board-warning);
+    background-color: rgba(255, 188, 77, 0.16);
+}
+
+.blueprint-slot.blueprint-drop-target--valid,
+.blueprint-bench-drop.blueprint-drop-target--valid,
+.blueprint-card.blueprint-drop-target--valid {
+    border-color: var(--board-accent);
+}
+
+.blueprint-slot.blueprint-drop-target--invalid,
+.blueprint-bench-drop.blueprint-drop-target--invalid,
+.blueprint-card.blueprint-drop-target--invalid {
+    border-color: var(--board-error);
+    background-color: rgba(255, 112, 112, 0.14);
+}
+
+.blueprint-insertion.blueprint-drop-target--valid {
+    background-color: var(--board-accent);
+}
+
+.blueprint-insertion.blueprint-drop-target--invalid {
+    background-color: var(--board-error);
+}
+
+.blueprint-drag-layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.blueprint-drag-ghost {
+    position: absolute;
+    width: 128px;
+    min-height: 44px;
+    padding: 8px;
+    justify-content: center;
+    background-color: rgba(31, 42, 56, 0.94);
+    border-width: 2px;
+    border-color: var(--board-accent);
+    border-radius: 6px;
+    opacity: 0.9;
+}
+
+.blueprint-drag-ghost Label {
+    color: var(--board-text);
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+}
+
+.blueprint-status {
+    min-height: 20px;
+    margin-top: 8px;
+    color: var(--board-muted);
+    white-space: normal;
+}
+
+.blueprint-status--error {
+    color: var(--board-error);
+}

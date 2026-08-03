@@ -24,6 +24,7 @@ namespace BlueprintCivilizations.Editor.ContentStudio
 
         private readonly List<ContentDefinition> items = new();
         private readonly Dictionary<string, RaceDefinition> racesByChoice = new(StringComparer.Ordinal);
+        private readonly HashSet<string> loggedBindingIssues = new(StringComparer.Ordinal);
         private ListView list;
         private ScrollView details;
         private ScrollView validation;
@@ -47,7 +48,11 @@ namespace BlueprintCivilizations.Editor.ContentStudio
             Undo.undoRedoPerformed += OnUndoRedo;
         }
 
-        private void OnDisable() => Undo.undoRedoPerformed -= OnUndoRedo;
+        private void OnDisable()
+        {
+            Undo.undoRedoPerformed -= OnUndoRedo;
+            details?.Unbind();
+        }
 
         public void CreateGUI()
         {
@@ -75,22 +80,22 @@ namespace BlueprintCivilizations.Editor.ContentStudio
 
             ConfigureTypeMenu();
             ConfigureFilters();
-            search.RegisterValueChangedCallback(_ => Refresh());
+            search.RegisterValueChangedCallback(change => SetSearchQuery(change.newValue));
             raceFilter.RegisterValueChangedCallback(change =>
             {
                 selectedRace = racesByChoice.TryGetValue(change.newValue, out var race) ? race : null;
-                Refresh();
+                Refresh(rebuildDetails: false);
             });
             tierFilter.RegisterValueChangedCallback(change =>
             {
                 selectedTier = ParseTier(change.newValue);
-                Refresh();
+                Refresh(rebuildDetails: false);
             });
             statusFilter.RegisterValueChangedCallback(change =>
             {
                 selectedEnabledState = change.newValue == "Enabled" ? EnabledFilter.Enabled :
                     change.newValue == "Disabled" ? EnabledFilter.Disabled : EnabledFilter.All;
-                Refresh();
+                Refresh(rebuildDetails: false);
             });
             rootVisualElement.Q<Button>("create-button").clicked += CreateSelectedType;
             rootVisualElement.Q<Button>("duplicate-button").clicked += DuplicateSelected;
@@ -126,6 +131,14 @@ namespace BlueprintCivilizations.Editor.ContentStudio
 
             RefreshRaceFilter();
             Refresh();
+        }
+
+        /// <summary>Applies a list search while preserving valid selection and detail bindings.</summary>
+        public void SetSearchQuery(string query)
+        {
+            if (search == null) return;
+            search.SetValueWithoutNotify(query ?? "");
+            Refresh(rebuildDetails: false);
         }
 
         private void ConfigureTypeMenu()
@@ -189,7 +202,7 @@ namespace BlueprintCivilizations.Editor.ContentStudio
             });
         }
 
-        private void Refresh(ContentDefinition preserveSelection = null)
+        private void Refresh(ContentDefinition preserveSelection = null, bool rebuildDetails = true)
         {
             if (list == null) return;
             var previous = preserveSelection != null ? preserveSelection : Selected;
@@ -197,7 +210,11 @@ namespace BlueprintCivilizations.Editor.ContentStudio
             list.Rebuild();
 
             int selectedIndex = previous == null ? -1 : items.IndexOf(previous);
-            if (selectedIndex >= 0) list.SetSelection(selectedIndex);
+            if (selectedIndex >= 0)
+            {
+                list.SetSelectionWithoutNotify(new[] { selectedIndex });
+                if (rebuildDetails) ShowDetails(items[selectedIndex]);
+            }
             else
             {
                 list.ClearSelection();
@@ -288,6 +305,7 @@ namespace BlueprintCivilizations.Editor.ContentStudio
 
         private void ShowDetails(ContentDefinition selected)
         {
+            details.Unbind();
             details.Clear();
             if (selected == null)
             {
@@ -305,34 +323,19 @@ namespace BlueprintCivilizations.Editor.ContentStudio
             details.Add(identity);
 
             var serialized = new SerializedObject(selected);
-            if (selected is UnitDefinition) BuildUnitEditor(serialized);
+            if (selected is UnitDefinition)
+                UnitDefinitionEditorBuilder.Build(details, serialized,
+                    issue => LogBindingIssueOnce(issue, selected));
             else details.Add(new InspectorElement(serialized));
 
             enableDisableButton.text = selected.IsEnabled ? "Disable (Recommended)" : "Enable";
             UpdateValidation(selected);
         }
 
-        private void BuildUnitEditor(SerializedObject serialized)
+        private void LogBindingIssueOnce(ContentStudioBindingIssue issue, UnityEngine.Object context)
         {
-            AddUnitSection(serialized, "Identity", "displayName", "description", "dataVersion", "isEnabled", "tags", "race", "isNeutral", "tier", "role");
-            AddUnitSection(serialized, "Economy and Shop", "goldCost", "poolKind", "shopPoolSize", "baseShopWeight");
-            AddUnitSection(serialized, "Production", "productionStats");
-            AddUnitSection(serialized, "Combat", "combatStats", "targeting", "laneCompatibility", "movementProfile", "abilities");
-            AddUnitSection(serialized, "Blueprint Progression", "permittedPerCopyStatUpgrades", "socketMilestones", "ascensionOneThreshold", "ascensionOneOptions", "ascensionTwoThreshold", "ascensionTwoOptions");
-            AddUnitSection(serialized, "Presentation", "icon", "presentation");
-        }
-
-        private void AddUnitSection(SerializedObject serialized, string title, params string[] propertyNames)
-        {
-            var section = new Foldout { text = title, value = true };
-            section.AddToClassList("unit-section");
-            foreach (string propertyName in propertyNames)
-            {
-                var property = serialized.FindProperty(propertyName);
-                if (property != null) section.Add(new PropertyField(property));
-                else section.Add(new HelpBox($"Missing serialized field: {propertyName}", HelpBoxMessageType.Error));
-            }
-            details.Add(section);
+            string key = $"{issue.AssetType}|{issue.AssetPath}|{issue.PropertyPath}";
+            if (loggedBindingIssues.Add(key)) Debug.LogError(issue.Message, context);
         }
 
         private void OnSerializedPropertyChanged()
@@ -441,8 +444,9 @@ namespace BlueprintCivilizations.Editor.ContentStudio
         private void OnUndoRedo()
         {
             if (list == null) return;
+            var selected = Selected;
             RefreshRaceFilter();
-            Refresh();
+            Refresh(selected);
         }
     }
 }

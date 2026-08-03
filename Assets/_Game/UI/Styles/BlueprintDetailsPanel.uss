@@ -1,0 +1,189 @@
+:root {
+    --details-bg: rgb(24, 33, 45);
+    --details-section: rgb(34, 46, 61);
+    --details-border: rgb(81, 104, 128);
+    --details-text: rgb(235, 241, 246);
+    --details-muted: rgb(159, 178, 194);
+    --details-accent: rgb(90, 211, 174);
+    --details-base: rgb(177, 194, 208);
+    --details-warning: rgb(255, 188, 77);
+    --details-error: rgb(255, 112, 112);
+}
+
+.blueprint-details-panel {
+    flex-grow: 1;
+    min-height: 330px;
+    max-height: 720px;
+    padding: 14px;
+    background-color: var(--details-bg);
+    color: var(--details-text);
+    border-width: 1px;
+    border-color: var(--details-border);
+    border-radius: 8px;
+}
+
+.blueprint-details-title {
+    margin-bottom: 10px;
+    font-size: 15px;
+    -unity-font-style: bold;
+    color: var(--details-text);
+}
+
+.blueprint-details-empty {
+    flex-grow: 1;
+    min-height: 220px;
+    justify-content: center;
+    padding: 20px;
+    background-color: rgba(34, 46, 61, 0.55);
+    border-width: 1px;
+    border-color: var(--details-border);
+    border-radius: 6px;
+}
+
+.blueprint-details-empty-message {
+    color: var(--details-muted);
+    font-size: 14px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.blueprint-details-content,
+.blueprint-details-scroll,
+.blueprint-details-sections {
+    flex-grow: 1;
+}
+
+.blueprint-details--hidden {
+    display: none;
+}
+
+.blueprint-details-identity-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.blueprint-details-icon-frame {
+    width: 62px;
+    height: 62px;
+    min-width: 62px;
+    margin-right: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--details-section);
+    border-width: 1px;
+    border-color: var(--details-border);
+    border-radius: 6px;
+}
+
+.blueprint-details-icon {
+    width: 54px;
+    height: 54px;
+}
+
+.blueprint-details-icon-fallback {
+    color: var(--details-muted);
+    font-size: 9px;
+}
+
+.blueprint-details-heading-copy {
+    flex-grow: 1;
+}
+
+.blueprint-details-name {
+    color: var(--details-text);
+    font-size: 18px;
+    -unity-font-style: bold;
+    white-space: normal;
+}
+
+.blueprint-details-developer-id {
+    margin-top: 3px;
+    color: var(--details-muted);
+    font-size: 9px;
+    white-space: normal;
+}
+
+.blueprint-details-diagnostic {
+    margin-bottom: 8px;
+    padding: 7px;
+    color: var(--details-error);
+    background-color: rgba(255, 112, 112, 0.12);
+    border-width: 1px;
+    border-color: var(--details-error);
+    border-radius: 4px;
+    white-space: normal;
+}
+
+.blueprint-details-section {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: var(--details-section);
+    border-width: 1px;
+    border-color: rgba(81, 104, 128, 0.7);
+    border-radius: 5px;
+}
+
+.blueprint-details-section-heading {
+    margin-bottom: 6px;
+    color: var(--details-accent);
+    font-size: 12px;
+    -unity-font-style: bold;
+}
+
+.blueprint-details-value-row {
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+.blueprint-details-value-label {
+    width: 118px;
+    min-width: 118px;
+    margin-right: 8px;
+    color: var(--details-muted);
+    font-size: 10px;
+    white-space: normal;
+}
+
+.blueprint-details-value {
+    flex-grow: 1;
+    color: var(--details-text);
+    font-size: 10px;
+    white-space: normal;
+}
+
+.blueprint-details-stat-row {
+    margin-top: 3px;
+    padding-top: 4px;
+    border-top-width: 1px;
+    border-top-color: rgba(81, 104, 128, 0.45);
+}
+
+.blueprint-details-stat-label {
+    margin-bottom: 3px;
+    color: var(--details-text);
+    font-size: 10px;
+    -unity-font-style: bold;
+}
+
+.blueprint-details-stat-values {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.blueprint-details-stat-base,
+.blueprint-details-stat-current {
+    min-width: 105px;
+    margin-right: 8px;
+    font-size: 10px;
+}
+
+.blueprint-details-stat-base {
+    color: var(--details-base);
+}
+
+.blueprint-details-stat-current {
+    color: var(--details-accent);
+    -unity-font-style: bold;
+}

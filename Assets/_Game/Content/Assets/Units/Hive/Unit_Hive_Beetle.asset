@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: HIVE_BEETLE
   displayName: Shell Beetle
-  description: "Melee tank. Gains 25 Armor for the first 4 seconds after spawning."
+  description: Melee tank. Gains 25 Armor for the first 4 seconds after spawning.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic, Frontline]
+  tags:
+  - Hive
+  - Organic
+  - Frontline
   icon: {fileID: 0}
   race: {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
   isNeutral: 0
@@ -30,7 +33,7 @@ MonoBehaviour:
   combatStats:
     maxHealth: 180
     attackDamage: 13
-    attackIntervalSeconds: 1.5384616
+    attackIntervalSeconds: 1.538462
     attackRange: 1
     movementSpeed: 2
     armor: 0
@@ -53,24 +56,67 @@ MonoBehaviour:
   - id: refinement.hp
     displayName: Reinforced Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: maxHealth, operation: 1, value: 8, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
+    modifier:
+      targetSelector: self
+      stat: maxHealth
+      operation: 1
+      value: 8
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
   - id: refinement.damage
     displayName: Sharpened Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: attackDamage, operation: 1, value: 8, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
+    modifier:
+      targetSelector: self
+      stat: attackDamage
+      operation: 1
+      value: 8
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
   - id: refinement.spawn
     displayName: Accelerated Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: spawnInterval, operation: 2, value: -6, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
+    modifier:
+      targetSelector: self
+      stat: spawnInterval
+      operation: 2
+      value: -6
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
   - id: refinement.population
     displayName: Expanded Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: maximumPopulation, operation: 0, value: 1, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
+    modifier:
+      targetSelector: self
+      stat: maximumPopulation
+      operation: 0
+      value: 1
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
   - id: refinement.movement
     displayName: Mobile Pattern
     maximumSelections: 3
-    modifier: {targetSelector: self, stat: movementSpeed, operation: 1, value: 5, conditionTags: [], sourcePriority: 0, durationScope: 0, durationSeconds: 0}
-  socketMilestones: {firstSocketCopies: 1, secondSocketCopies: 4, thirdSocketCopies: 9}
+    modifier:
+      targetSelector: self
+      stat: movementSpeed
+      operation: 1
+      value: 5
+      conditionTags: []
+      sourcePriority: 0
+      durationScope: 0
+      durationSeconds: 0
+  socketMilestones:
+    firstSocketCopies: 1
+    secondSocketCopies: 4
+    thirdSocketCopies: 9
   ascensionOneThreshold: 5
   ascensionTwoThreshold: 10
   ascensionOneOptions: []

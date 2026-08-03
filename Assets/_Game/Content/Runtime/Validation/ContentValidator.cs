@@ -122,9 +122,13 @@ namespace BlueprintCivilizations.Content.Validation
             ValidateReferences(unit, context, issues, "ascensionOneOptions", unit.AscensionOneOptions);
             ValidateReferences(unit, context, issues, "ascensionTwoOptions", unit.AscensionTwoOptions);
             if (unit.AscensionOneOptions.Count == 0)
-                Add(unit, context, issues, ValidationSeverity.Warning, "ascensionOneOptions", "No Ascension I evolution is assigned.", "Author the legal evolution paths before progression is implemented.");
+                Add(unit, context, issues, ValidationSeverity.Warning, "ascensionOneOptions",
+                    "No Ascension I evolution is assigned. This is non-blocking for Milestone 1 because Blueprint progression is not implemented.",
+                    "Author the legal evolution paths before the Blueprint progression milestone.");
             if (unit.VisualPrefab == null)
-                Add(unit, context, issues, ValidationSeverity.Warning, "visualPrefab", "Visual prefab is not assigned.", "Assign a presentation prefab before runtime presentation work.");
+                Add(unit, context, issues, ValidationSeverity.Warning, "visualPrefab",
+                    "Visual prefab is not assigned. This optional presentation asset is non-blocking for Milestone 1 board planning.",
+                    "Assign a presentation prefab before runtime entity presentation work.");
         }
 
         private static void ValidatePerCopyUpgrades(UnitDefinition unit, ValidationContext context, List<ValidationIssue> issues)

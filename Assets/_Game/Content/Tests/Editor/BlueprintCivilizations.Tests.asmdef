@@ -1,7 +1,7 @@
 {
   "name": "BlueprintCivilizations.Tests",
   "rootNamespace": "BlueprintCivilizations.Tests",
-  "references": ["BlueprintCivilizations.Core", "BlueprintCivilizations.Content", "BlueprintCivilizations.Editor"],
+  "references": ["BlueprintCivilizations.Core", "BlueprintCivilizations.Content", "BlueprintCivilizations.Blueprints", "BlueprintCivilizations.Editor"],
   "optionalUnityReferences": ["TestAssemblies"],
   "includePlatforms": ["Editor"],
   "excludePlatforms": [],

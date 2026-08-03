@@ -1,13 +1,16 @@
-# Milestone 0 Architecture
+# Project Architecture
 
 ## Assembly boundaries
 
 | Assembly | Responsibility | References |
 | --- | --- | --- |
-| `BlueprintCivilizations.Core` | Plain C# primitives and the minimal ID-based blueprint state contract | None; Unity engine references are disabled |
+| `BlueprintCivilizations.Core` | Plain C# primitives and broadly reusable authored-data enums | None; Unity engine references are disabled |
 | `BlueprintCivilizations.Content` | ScriptableObject definitions, catalog, structured authoring data, and validation | Core |
+| `BlueprintCivilizations.Blueprints` | ID-based Blueprint ownership, linear board/bench state, placement commands, validation, adjacency, serialization, and persistence adapters | Core, Content |
+| `BlueprintCivilizations.UI` | UI Toolkit views, view models, presenters, and runtime composition for the Blueprint Board | Core, Content, Blueprints |
 | `BlueprintCivilizations.Editor` | Content Studio, sample generation, catalog rebuilding, and build validation | Core, Content; Editor only |
-| `BlueprintCivilizations.Tests` | EditMode behavior and asset tests | Core, Content, Editor; Editor only |
+| `BlueprintCivilizations.Tests` | EditMode content behavior and asset tests | Core, Content, Blueprints, Editor; Editor only |
+| `BlueprintCivilizations.Blueprints.Tests` | EditMode board rules, serialization, validation, undo/redo, and UI asset tests | Core, Content, Blueprints, UI; Editor only |
 
 Runtime assemblies contain no `UnityEditor` dependency. Dependency direction is one-way, and the test assembly is not auto-referenced by production code.
 
@@ -24,7 +27,15 @@ Runtime assemblies contain no `UnityEditor` dependency. Dependency direction is 
 - `SocketMilestoneConfiguration` for copy thresholds 1, 4, and 9.
 - `UnitPresentationReferences` for optional prefab, animator, audio, and VFX assets.
 
-The minimal `UnitBlueprintState` is a plain C# separation contract required by the approved Milestone 0 scope. It stores definition/owner IDs and player selections, but never a `UnitDefinition` reference or authored statistics. Board commands, placement rules, adjacency, derived-stat calculation, and progression services remain Milestone 1 or later.
+`BlueprintState` and its semantic `UnitBlueprintState` subtype are plain serializable runtime objects owned by the Blueprints subsystem. They store definition/owner IDs, player selections, and synchronized placement metadata, but never a `ContentDefinition` reference or authored statistics. `BlueprintBoardState` is the aggregate root for the fixed-capacity active slot line, unlimited Milestone 1 bench, owned state registry, save version, and monotonically increasing revision.
+
+All board mutation passes through `BlueprintPlacementService`. Commands are prevalidated, applied transactionally, postvalidated, revisioned, evented, and recorded as JSON snapshots for runtime undo/redo. Expected player-action failures return `BlueprintCommandResult`; they do not throw and do not partially mutate state. The UI issues commands through a presenter and never writes board lists.
+
+The runtime planning panel is composed by `BlueprintBoardPanelFactory` and owned by `BlueprintBoardPanelController`. The controller disposes the Board and Details presenters as one unit. `BlueprintBoardPresenter` remains the only owner of the stable selected Blueprint ID. `BlueprintDetailsPresenter` observes selection and placement events, while `ContentCatalogBlueprintDetailsResolver` joins ID-based runtime state with immutable catalog definitions into a read-only `BlueprintDetailsViewModel`. `BlueprintDetailsView` only renders that model; it does not inspect ScriptableObjects, calculate statistics, or mutate board state.
+
+Details statistics explicitly carry authored base value, calculated current value, display unit, tooltip text, and an optional modifier breakdown. Milestone 1 supplies current equal to base and an empty breakdown. Future progression, adjacency, philosophy, artifact, Nexus, or other modifier services may populate this projection without moving their rules into UI code.
+
+`BlueprintAdjacencyService` operates only over active slot order. Authored tag/race/tier metadata is read through an injected resolver. It calculates relationships but does not apply modifiers or gameplay bonuses. See `BlueprintBoard.md` for the complete subsystem contract.
 
 ## Stable IDs
 
@@ -57,4 +68,6 @@ The following are prototype placeholders because the current Bible does not spec
 
 ## Current limitations
 
-Milestone 0 does not contain combat, runtime match flow, economy execution, shop generation, multiplayer, matchmaking, runtime UI, Blueprint Board services, or derived-stat calculation. The complete Volume 16 roster has not been converted; the Hive set is a foundation sample only.
+Milestone 1 does not contain combat, runtime match flow, economy execution, finite bench economy rules, shop generation, multiplayer, matchmaking, Blueprint progression, or derived-stat calculation. The complete Volume 16 roster has not been converted; the Hive set remains a foundation sample only.
+
+The Details Panel therefore reports authored production/combat/shop-planning data and current stored Blueprint runtime fields only. It does not acquire copies, unlock milestones, calculate research/evolution/refinement effects, or expose live shop pool counts. See `BlueprintDetailsPanel.md` for its presentation and Player-build contract.

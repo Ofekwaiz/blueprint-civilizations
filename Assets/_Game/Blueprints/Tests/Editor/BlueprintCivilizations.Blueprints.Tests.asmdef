@@ -1,0 +1,15 @@
+{
+  "name": "BlueprintCivilizations.Blueprints.Tests",
+  "rootNamespace": "BlueprintCivilizations.Blueprints.Tests",
+  "references": ["BlueprintCivilizations.Core", "BlueprintCivilizations.Content", "BlueprintCivilizations.Blueprints", "BlueprintCivilizations.UI", "BlueprintCivilizations.Editor"],
+  "optionalUnityReferences": ["TestAssemblies"],
+  "includePlatforms": ["Editor"],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": false,
+  "defineConstraints": ["UNITY_INCLUDE_TESTS"],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

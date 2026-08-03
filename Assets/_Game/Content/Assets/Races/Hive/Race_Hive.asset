@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: RACE_HIVE
   displayName: Hive
-  description: "Adaptive biological civilization focused on replacement, evolution, poison, armor, flyers, parasites, and creep support."
+  description: Adaptive biological civilization focused on replacement, evolution,
+    poison, armor, flyers, parasites, and creep support.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic]
+  tags:
+  - Hive
+  - Organic
   icon: {fileID: 0}
   uniqueResourceName: Biomass
   identityColor: {r: 0.32941177, g: 0.50980395, b: 0.20784314, a: 1}

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="12" result="Passed" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="1.0717747">
+  <test-suite type="TestSuite" id="1020" name="BlueprintCivilizations_Unity_M0" fullname="BlueprintCivilizations_Unity_M0" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="1.071775" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <test-suite type="Assembly" id="1014" name="BlueprintCivilizations.UI.PlayModeTests.dll" fullname="C:/Users/Ofek/AppData/Local/Temp/BlueprintBoardInteractionCompile_7c346c1b8d5e4fae9ecbb6efa5d230d8/Library/ScriptAssemblies/BlueprintCivilizations.UI.PlayModeTests.dll" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="1.064096" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="24836" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <test-suite type="TestSuite" id="1015" name="BlueprintCivilizations" fullname="BlueprintCivilizations" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="1.063422" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestSuite" id="1016" name="UI" fullname="BlueprintCivilizations.UI" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="1.063146" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="TestSuite" id="1017" name="Tests" fullname="BlueprintCivilizations.UI.Tests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="1.062802" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-suite type="TestSuite" id="1018" name="PlayMode" fullname="BlueprintCivilizations.UI.Tests.PlayMode" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="1.062380" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+              <properties />
+              <test-suite type="TestFixture" id="1001" name="BlueprintBoardPlayModeTests" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" testcasecount="12" result="Passed" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="1.059730" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+                <properties />
+                <test-case id="1009" name="ActiveInsertionDragReordersBlueprints" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ActiveInsertionDragReordersBlueprints" methodname="ActiveInsertionDragReordersBlueprints" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="135696498" result="Passed" start-time="2026-08-03 08:34:28Z" end-time="2026-08-03 08:34:29Z" duration="0.811563" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1006" name="ActiveToBenchDragBenchesBlueprint" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ActiveToBenchDragBenchesBlueprint" methodname="ActiveToBenchDragBenchesBlueprint" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="296676074" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.020214" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1008" name="ActiveToEmptySlotDragMovesBlueprintAndPreservesSelection" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ActiveToEmptySlotDragMovesBlueprintAndPreservesSelection" methodname="ActiveToEmptySlotDragMovesBlueprintAndPreservesSelection" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1900902971" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.024104" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1007" name="ActiveToOccupiedActiveSlotDragSwapsBlueprints" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ActiveToOccupiedActiveSlotDragSwapsBlueprints" methodname="ActiveToOccupiedActiveSlotDragSwapsBlueprints" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="287798492" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.017198" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1004" name="BenchToEmptyActiveSlotDragActivatesBlueprint" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.BenchToEmptyActiveSlotDragActivatesBlueprint" methodname="BenchToEmptyActiveSlotDragActivatesBlueprint" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="433131639" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.013976" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1005" name="BenchToOccupiedActiveSlotDragUsesDocumentedInsertion" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.BenchToOccupiedActiveSlotDragUsesDocumentedInsertion" methodname="BenchToOccupiedActiveSlotDragUsesDocumentedInsertion" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1322819491" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.015748" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1003" name="ClickingFirstThenSecondCardTransfersSelection" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.ClickingFirstThenSecondCardTransfersSelection" methodname="ClickingFirstThenSecondCardTransfersSelection" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="215703876" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.023896" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1013" name="DisableEnableDoesNotAccumulateCallbacksAndRestoresPersistedBoard" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.DisableEnableDoesNotAccumulateCallbacksAndRestoresPersistedBoard" methodname="DisableEnableDoesNotAccumulateCallbacksAndRestoresPersistedBoard" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="1708443401" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.034465" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1010" name="DragThresholdShowsGhostSourceAndValidTargetPreviewBeforeRelease" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.DragThresholdShowsGhostSourceAndValidTargetPreviewBeforeRelease" methodname="DragThresholdShowsGhostSourceAndValidTargetPreviewBeforeRelease" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="462720376" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.022501" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1002" name="HoveringOneActiveCardAppliesHoverClassOnlyToThatCard" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.HoveringOneActiveCardAppliesHoverClassOnlyToThatCard" methodname="HoveringOneActiveCardAppliesHoverClassOnlyToThatCard" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="111555078" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.014491" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1012" name="InvalidDropLeavesStateUnchangedAndReleasesPointerCapture" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.InvalidDropLeavesStateUnchangedAndReleasesPointerCapture" methodname="InvalidDropLeavesStateUnchangedAndReleasesPointerCapture" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="548806098" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.025898" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                </test-case>
+                <test-case id="1011" name="InvalidInsertionPreviewIsDistinctAndDropDoesNotMutateState" fullname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests.InvalidInsertionPreviewIsDistinctAndDropDoesNotMutateState" methodname="InvalidInsertionPreviewIsDistinctAndDropDoesNotMutateState" classname="BlueprintCivilizations.UI.Tests.PlayMode.BlueprintBoardPlayModeTests" runstate="Runnable" seed="74019415" result="Passed" start-time="2026-08-03 08:34:29Z" end-time="2026-08-03 08:34:29Z" duration="0.014655" asserts="0">
+                  <properties>
+                    <property name="_JOINTYPE" value="UnityCombinatorial" />
+                    <property name="retryIteration" value="0" />
+                    <property name="repeatIteration" value="0" />
+                  </properties>
+                  <output><![CDATA[Saving results to: E:\BlueprintCivilizations_Unity_M0\BlueprintCivilizations_Unity_M0\Errors\TestResults_20260803_M1Interaction_PlayMode.xml
+]]></output>
+                </test-case>
+              </test-suite>
+            </test-suite>
+          </test-suite>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

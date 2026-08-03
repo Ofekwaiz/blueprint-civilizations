@@ -16,6 +16,21 @@ The UI Toolkit window loads its structure and styling from UXML/USS. The left pa
 
 The ID is displayed read-only and is deliberately absent from the serialized editor. Display-name changes do not change the ID.
 
+## UnitDefinition editor binding
+
+The grouped unit editor validates its complete serialized-property schema before constructing the detail view. It creates every `PropertyField` first, then binds the completed visual tree to the selected unit's fresh `SerializedObject`. Previous bindings are explicitly removed before switching assets or rebuilding after Undo/Redo.
+
+The six sections expose all currently authored unit data:
+
+- **Identity:** display name, description, data version, enabled state, tags, icon, race, neutral flag, tier, and role. The immutable stable ID remains a separate read-only label.
+- **Economy and Shop:** Gold cost, pool kind, shop pool size, and base shop weight.
+- **Production:** spawn interval, initial spawn delay, spawn batch size, maximum population, and spawn priority.
+- **Combat:** maximum HP, attack damage, attack interval, attack range, movement speed, armor, resistance, targeting priority and target compatibility, lane compatibility, movement profile, and abilities.
+- **Blueprint Progression:** permitted per-copy stat upgrades, all three socket-copy milestones, both Ascension thresholds, and both evolution-reference lists.
+- **Presentation:** visual prefab, animator controller, spawn/attack/death audio, and spawn/death VFX. The icon is shown in Identity.
+
+If an expected path no longer exists, the detail pane displays `Unable to display UnitDefinition fields. See Console for missing serialized property paths.` Each missing path produces one actionable Editor error containing the selected asset type, asset path, and expected property path; repeated repaints do not continuously log the same issue.
+
 ## Safe content operations
 
 - **Duplicate** copies the selected asset and immediately assigns a fresh stable ID.
@@ -37,4 +52,13 @@ Run `Tools > Blueprint Civilizations > Create or Repair Prototype Sample Content
 
 ## Limitations
 
-Milestone 0 provides visual authoring, not runtime gameplay. It does not preview derived combat statistics, execute modifiers/triggers, or implement drag-and-drop Blueprint Board behavior.
+Milestone 0 provides visual authoring, not runtime gameplay. Content Studio does not preview derived combat statistics or execute modifiers/triggers. Blueprint Board runtime interaction belongs to the separate Milestone 1 sandbox.
+
+## Manual UnitDefinition verification
+
+1. Open `Tools > Blueprint Civilizations > Content Studio`.
+2. Select **Web Spider** (`HIVE_SPIDER`) in Units.
+3. Expand Identity, Economy and Shop, Production, Combat, Blueprint Progression, and Presentation; confirm every section contains editable fields.
+4. Edit maximum HP, Gold cost, spawn interval, and maximum population.
+5. Use Undo and Redo and confirm the displayed values update without losing Web Spider selection.
+6. Save assets, restart Unity, reopen Content Studio, select Web Spider, and confirm the values persisted.

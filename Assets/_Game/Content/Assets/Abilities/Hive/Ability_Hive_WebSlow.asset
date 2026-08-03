@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: ABILITY_HIVE_WEB_SLOW
   displayName: Web Slow
-  description: "Every third attack applies 15% slow for 2 seconds."
+  description: Every third attack applies 15% slow for 2 seconds.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic, Slow]
+  tags:
+  - Hive
+  - Organic
+  - Slow
   icon: {fileID: 0}
   modifiers: []
   triggers:
@@ -36,4 +39,4 @@ MonoBehaviour:
       sourcePriority: 0
       durationScope: 1
       durationSeconds: 2
-  presentationSummary: "Every third attack slows its target."
+  presentationSummary: Every third attack slows its target.

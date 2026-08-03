@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: ABILITY_HIVE_SHELL_CARAPACE
   displayName: Shell Carapace
-  description: "For the first 4 seconds after spawning, gain 25 Armor."
+  description: For the first 4 seconds after spawning, gain 25 Armor.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic, Armor]
+  tags:
+  - Hive
+  - Organic
+  - Armor
   icon: {fileID: 0}
   modifiers: []
   triggers:
@@ -25,8 +28,8 @@ MonoBehaviour:
     requiredTags: []
     probability: 1
     everyNthEvent: 1
-    cooldownSeconds: 0
-    maximumTriggers: 1
+    cooldownSeconds: 1
+    maximumTriggers: 0
     modifiers:
     - targetSelector: eventTarget
       stat: self.armor
@@ -36,4 +39,4 @@ MonoBehaviour:
       sourcePriority: 0
       durationScope: 1
       durationSeconds: 4
-  presentationSummary: "Spawns with temporary armor."
+  presentationSummary: Spawns with temporary armor.

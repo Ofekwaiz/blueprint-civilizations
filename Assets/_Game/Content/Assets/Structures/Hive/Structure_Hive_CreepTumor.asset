@@ -14,10 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: HIVE_STR_01
   displayName: Creep Tumor
-  description: "Adjacent Organic blueprints gain move and spawn speed; its battlefield aura slows enemies."
+  description: Adjacent Organic blueprints gain move and spawn speed; its battlefield
+    aura slows enemies.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Organic, Structure, Creep]
+  tags:
+  - Hive
+  - Organic
+  - Structure
+  - Creep
   icon: {fileID: 0}
   race: {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
   isNeutral: 0
@@ -38,7 +43,8 @@ MonoBehaviour:
     stat: moveSpeed
     operation: 1
     value: 8
-    conditionTags: [Organic]
+    conditionTags:
+    - Organic
     sourcePriority: 0
     durationScope: 0
     durationSeconds: 0
@@ -46,7 +52,8 @@ MonoBehaviour:
     stat: spawnSpeed
     operation: 1
     value: 5
-    conditionTags: [Organic]
+    conditionTags:
+    - Organic
     sourcePriority: 0
     durationScope: 0
     durationSeconds: 0
@@ -55,7 +62,9 @@ MonoBehaviour:
   researchCompatibility:
     allowedRaces:
     - {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
-    requiredTags: [Structure]
+    requiredTags:
+    - Structure
     excludedTags: []
     allowNeutral: 0
-  rulesSummary: "Adjacent Organic blueprints gain +8% move speed and +5% spawn speed. Battlefield aura slows enemies 5%."
+  rulesSummary: Adjacent Organic blueprints gain +8% move speed and +5% spawn speed.
+    Battlefield aura slows enemies 5%.

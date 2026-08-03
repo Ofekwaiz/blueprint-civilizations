@@ -14,10 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   id: HIVE_ART_01
   displayName: Living Hive Heart
-  description: "All Hive spawn intervals are reduced by 6%; Nexus health is reduced by 8%."
+  description: All Hive spawn intervals are reduced by 6%; Nexus health is reduced
+    by 8%.
   dataVersion: 1
   isEnabled: 1
-  tags: [Hive, Artifact, Swarm]
+  tags:
+  - Hive
+  - Artifact
+  - Swarm
   icon: {fileID: 0}
   affinityRace: {fileID: 11400000, guid: 30000000000000000000000000000005, type: 2}
   rarity: 3
@@ -32,7 +36,8 @@ MonoBehaviour:
     stat: spawnInterval
     operation: 2
     value: -6
-    conditionTags: [Hive]
+    conditionTags:
+    - Hive
     sourcePriority: 0
     durationScope: 2
     durationSeconds: 0
